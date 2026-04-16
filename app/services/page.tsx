@@ -96,7 +96,7 @@ export default function ServicesPage() {
             </h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
               From diagnostic audits to hands-on system optimization to scaling
-              your team &mdash; I cover the full lifecycle of CX operations
+              your team  - I cover the full lifecycle of CX operations
               improvement.
             </p>
           </div>
@@ -199,7 +199,7 @@ export default function ServicesPage() {
             Let&apos;s talk about your CX operations.
           </h2>
           <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
-            Book a free strategy call. No pitch decks, no pressure &mdash; just
+            Book a free strategy call. No pitch decks, no pressure  - just
             an honest conversation about where your CX ops stand and where they
             could go.
           </p>

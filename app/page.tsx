@@ -56,7 +56,7 @@ export default function HomePage() {
                 <p>
                   Most CX consultants know one world. I have operated in two. At{" "}
                   <strong className="text-navy">Every Man Jack</strong>, I scaled a DTC
-                  support operation from the ground up &mdash; cutting ticket volume by 40%
+                  support operation from the ground up  - cutting ticket volume by 40%
                   through automation and self-service while maintaining 99th percentile
                   CSAT scores.
                 </p>
@@ -67,7 +67,7 @@ export default function HomePage() {
                   for overstock and returns.
                 </p>
                 <p>
-                  That combination &mdash; DTC speed plus enterprise discipline &mdash; is
+                  That combination  - DTC speed plus enterprise discipline  - is
                   what I bring to every engagement.
                 </p>
               </div>

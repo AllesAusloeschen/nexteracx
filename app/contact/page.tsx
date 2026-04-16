@@ -28,7 +28,7 @@ export default function ContactPage() {
             </h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
               Book a free strategy call or send me a message. No sales pitch
-              &mdash; just an honest conversation about your CX operations.
+               - just an honest conversation about your CX operations.
             </p>
           </div>
         </div>

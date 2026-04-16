@@ -105,8 +105,8 @@ export default function AboutPage() {
                 ticket has two customers.
               </p>
               <p>
-                That range &mdash; from scrappy DTC operations to
-                enterprise-grade SaaS &mdash; gives me a perspective most CX
+                That range  - from scrappy DTC operations to
+                enterprise-grade SaaS  - gives me a perspective most CX
                 consultants simply do not have. I know what good looks like at
                 every stage of growth.
               </p>
