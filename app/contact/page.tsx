@@ -105,19 +105,6 @@ export default function ContactPage() {
             </div>
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-wider text-navy mb-2">
-                LinkedIn
-              </h3>
-              <a
-                href="https://linkedin.com/in/mathiasdorr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-teal text-sm font-medium hover:text-teal-dark transition-colors"
-              >
-                linkedin.com/in/mathiasdorr
-              </a>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-navy mb-2">
                 Location
               </h3>
               <p className="text-gray-600 text-sm">

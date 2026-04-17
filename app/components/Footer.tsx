@@ -35,16 +35,6 @@ export default function Footer() {
                   Book a Strategy Call
                 </Link>
               </li>
-              <li>
-                <a
-                  href="https://linkedin.com/in/mathiasdorr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-teal transition-colors"
-                >
-                  LinkedIn
-                </a>
-              </li>
             </ul>
           </div>
         </div>
