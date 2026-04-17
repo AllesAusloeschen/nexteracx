@@ -5,40 +5,68 @@ import CTAButton from "../components/CTAButton";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Mathias Dorr is a CX operations strategist with 9+ years of experience across DTC and SaaS. MBA from Gonzaga University.",
+    "Mathias Dorr and Alyssa Provitt are CX operations strategists with a combined 14+ years of experience across DTC and SaaS.",
   openGraph: {
-    title: "About Mathias Dorr | NextEraCX",
+    title: "About | NextEraCX",
     description:
-      "CX operations strategist with 9+ years across DTC ecommerce and enterprise SaaS.",
+      "CX operations strategists with 14+ years combined across DTC ecommerce and enterprise SaaS.",
     url: "https://nexteracx.co/about",
   },
 };
 
+const founders = [
+  {
+    name: "Mathias Dorr",
+    title: "Co-Founder & CX Strategist",
+    bio: [
+      <>At <strong className="text-navy">Every Man Jack</strong>, Mathias owned the full DTC support operation for one of the fastest-growing men&apos;s grooming brands. He built automation systems that cut ticket volume by 40%, implemented QA frameworks that drove CSAT to the 99th percentile, and managed both in-house and offshore teams.</>,
+      <>At <strong className="text-navy">B-Stock Solutions</strong>, he operated in a fundamentally different environment: a dual-sided SaaS marketplace serving Fortune 500 enterprise sellers and thousands of international buyers. He navigated enterprise stakeholder dynamics, built cross-border support processes, and managed the complexity of a platform where every ticket has two customers.</>,
+      <>He holds an <strong className="text-navy">MBA from Gonzaga University</strong>, grounding his operational instincts in strategic thinking.</>,
+    ],
+  },
+  {
+    name: "Alyssa Provitt",
+    title: "Co-Founder & CX Operations Lead",
+    bio: [
+      <>Alyssa spent <strong className="text-navy">5 years at Every Man Jack</strong> as Sr Customer Experience and Operations Manager, where she led cross-functional operations spanning CX, supply chain, and process improvement.</>,
+      <>She brings deep expertise in <strong className="text-navy">Zendesk, Gorgias, and knowledge base systems</strong>, with a track record of building scalable support workflows, improving customer retention, and streamlining operations across teams.</>,
+      <>Based in Houston, TX, Alyssa combines hands-on operational leadership with a systems-first mindset that turns complex CX challenges into repeatable, efficient processes.</>,
+    ],
+  },
+];
+
 const timeline = [
   {
-    role: "CX Operations Consultant",
+    role: "Co-Founders, NextEraCX",
     company: "NextEraCX",
     period: "Present",
     description:
       "Helping DTC and SaaS brands build scalable, efficient CX operations through audits, systems optimization, and team development.",
   },
   {
+    role: "Sr CX and Operations Manager",
+    company: "Every Man Jack (Alyssa)",
+    period: "Jan 2020 - Jan 2025",
+    description:
+      "Led cross-functional CX and supply chain operations. Built scalable support processes, improved customer retention, and managed knowledge base and process improvement initiatives across teams.",
+  },
+  {
     role: "CX Operations Manager",
-    company: "Every Man Jack",
+    company: "Every Man Jack (Mathias)",
     period: "5+ years",
     description:
-      "Built and scaled the entire DTC customer support operation. Drove a 40% reduction in ticket volume through automation and self-service initiatives. Achieved and maintained 99th percentile CSAT scores. Implemented Gorgias automation workflows, QA frameworks, and offshore team management.",
+      "Built and scaled the entire DTC customer support operation. Drove a 40% reduction in ticket volume through automation and self-service initiatives. Achieved and maintained 99th percentile CSAT scores.",
   },
   {
     role: "CX Operations Lead",
-    company: "B-Stock Solutions",
+    company: "B-Stock Solutions (Mathias)",
     period: "4 years",
     description:
-      "Managed customer experience for a dual-sided SaaS marketplace platform. Supported Fortune 500 enterprise seller clients and a global buyer base across online auction operations for overstock and returns inventory. Built cross-border support processes for international markets.",
+      "Managed customer experience for a dual-sided SaaS marketplace platform. Supported Fortune 500 enterprise seller clients and a global buyer base across online auction operations.",
   },
   {
     role: "MBA",
-    company: "Gonzaga University",
+    company: "Gonzaga University (Mathias)",
     period: "",
     description:
       "Master of Business Administration with focus on operations and strategy.",
@@ -53,80 +81,80 @@ export default function AboutPage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-28">
           <div className="max-w-3xl">
             <p className="text-teal text-sm font-semibold uppercase tracking-wider mb-4">
-              About
+              About Us
             </p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6">
-              Mathias Dorr
+              Meet the Team
             </h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
-              CX operations strategist. 9+ years building and scaling support
-              operations for DTC and SaaS companies. MBA from Gonzaga.
+              Two CX operators who have built, broken, and rebuilt support
+              operations at scale. 14+ combined years across DTC and SaaS.
+              Former colleagues at Every Man Jack, now partners at NextEraCX.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Bio + Photo */}
+      {/* Founders */}
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
-            {/* Photo placeholder */}
-            <div className="lg:col-span-2 flex justify-center">
-              <div className="w-full max-w-xs aspect-[3/4] rounded-lg bg-gray-100 border border-gray-200 flex items-center justify-center">
-                <span className="text-sm text-gray-400 font-medium">
-                  Photo
-                </span>
-              </div>
-            </div>
+          <div className="space-y-24">
+            {founders.map((founder, i) => (
+              <div
+                key={founder.name}
+                className={`grid grid-cols-1 lg:grid-cols-5 gap-12 items-start ${i % 2 === 1 ? "lg:direction-rtl" : ""}`}
+              >
+                {/* Photo placeholder */}
+                <div className={`lg:col-span-2 flex justify-center ${i % 2 === 1 ? "lg:order-2" : ""}`}>
+                  <div className="w-full max-w-xs aspect-[3/4] rounded-lg bg-gray-100 border border-gray-200 flex items-center justify-center">
+                    <span className="text-sm text-gray-400 font-medium">
+                      Photo
+                    </span>
+                  </div>
+                </div>
 
-            {/* Bio */}
-            <div className="lg:col-span-3 space-y-5 text-gray-600 leading-relaxed">
-              <p className="text-lg">
-                I started in CX before it was a buzzword. Over the past decade, I
-                have built support operations from scratch, managed teams across
-                time zones, and turned customer service from a cost center into a
-                growth driver.
-              </p>
-              <p>
-                At <strong className="text-navy">Every Man Jack</strong>, I
-                owned the full DTC support operation for one of the
-                fastest-growing men&apos;s grooming brands. I built automation
-                systems that cut ticket volume by 40%, implemented QA frameworks
-                that drove CSAT to the 99th percentile, and managed both
-                in-house and offshore teams.
-              </p>
-              <p>
-                At <strong className="text-navy">B-Stock Solutions</strong>, I
-                operated in a fundamentally different environment: a dual-sided
-                SaaS marketplace serving Fortune 500 enterprise sellers and
-                thousands of international buyers. I learned how to navigate
-                enterprise stakeholder dynamics, build cross-border support
-                processes, and manage the complexity of a platform where every
-                ticket has two customers.
-              </p>
-              <p>
-                That range  - from scrappy DTC operations to
-                enterprise-grade SaaS  - gives me a perspective most CX
-                consultants simply do not have. I know what good looks like at
-                every stage of growth.
-              </p>
-              <p>
-                I hold an <strong className="text-navy">MBA from Gonzaga University</strong>,
-                which grounds my operational instincts in strategic thinking. I
-                believe the best CX operations combine empathy with engineering:
-                the systems have to work for both the customer and the business.
-              </p>
-            </div>
+                {/* Bio */}
+                <div className={`lg:col-span-3 space-y-5 text-gray-600 leading-relaxed ${i % 2 === 1 ? "lg:order-1" : ""}`}>
+                  <div>
+                    <h2 className="text-2xl md:text-3xl font-bold text-navy mb-1">
+                      {founder.name}
+                    </h2>
+                    <p className="text-teal font-medium">{founder.title}</p>
+                  </div>
+                  {founder.bio.map((paragraph, j) => (
+                    <p key={j}>{paragraph}</p>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
+        </div>
+      </section>
+
+      {/* The Partnership */}
+      <section className="bg-gray-50">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 py-20 md:py-24 text-center">
+          <SectionHeading
+            label="Our Story"
+            title="Why we partnered."
+          />
+          <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
+            We worked together at Every Man Jack, building and scaling one of
+            the highest-performing CX operations in DTC. We saw the same thing
+            over and over: brands treating support as a cost center instead of
+            a growth lever. NextEraCX exists because we know what great CX ops
+            look like, and most companies are leaving money on the table by not
+            investing in it.
+          </p>
         </div>
       </section>
 
       {/* Philosophy */}
-      <section className="bg-gray-50">
+      <section className="bg-white">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
           <SectionHeading
             label="Approach"
-            title="How I think about CX operations."
+            title="How we think about CX operations."
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="text-center p-6">
@@ -168,7 +196,7 @@ export default function AboutPage() {
                 Built to last
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                I build operations that your team can own and maintain long after
+                We build operations that your team can own and maintain long after
                 the engagement ends. No consultant dependency.
               </p>
             </div>
@@ -177,13 +205,13 @@ export default function AboutPage() {
       </section>
 
       {/* Career Timeline */}
-      <section className="bg-white">
+      <section className="bg-gray-50">
         <div className="mx-auto max-w-3xl px-6 lg:px-8 py-20 md:py-24">
-          <SectionHeading label="Experience" title="Career timeline." />
+          <SectionHeading label="Experience" title="Combined timeline." />
           <div className="space-y-10">
-            {timeline.map((item) => (
+            {timeline.map((item, i) => (
               <div
-                key={item.company}
+                key={i}
                 className="relative pl-8 border-l-2 border-gray-200"
               >
                 <div className="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-teal" />
@@ -218,8 +246,8 @@ export default function AboutPage() {
             Let&apos;s work together.
           </h2>
           <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
-            If your CX operations need strategic attention, I would like to hear
-            about it.
+            If your CX operations need strategic attention, we would like to
+            hear about it.
           </p>
           <CTAButton href="/contact">Book a Strategy Call</CTAButton>
         </div>

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | NextEraCX",
   },
   description:
-    "Strategic CX operations consulting for DTC and SaaS brands. Audits, systems optimization, and team scaling by Mathias Dorr.",
+    "Strategic CX operations consulting for DTC and SaaS brands. Audits, systems optimization, and team scaling by Mathias Dorr and Alyssa Provitt.",
   metadataBase: new URL("https://nexteracx.co"),
   openGraph: {
     type: "website",

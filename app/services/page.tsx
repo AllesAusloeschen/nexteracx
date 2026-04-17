@@ -32,7 +32,7 @@ const services = [
     id: "optimization",
     title: "Systems Optimization",
     description:
-      "Hands-on implementation to get maximum value from your CX platform. Whether you are on Gorgias, Zendesk, or evaluating a migration, I configure and optimize your systems for efficiency and scale.",
+      "Hands-on implementation to get maximum value from your CX platform. Whether you are on Gorgias, Zendesk, or evaluating a migration, we configure and optimize your systems for efficiency and scale.",
     deliverables: [
       "Gorgias or Zendesk setup, configuration, and migration",
       "Automation workflows (macros, rules, triggers)",
@@ -61,23 +61,23 @@ const services = [
 const faqs = [
   {
     q: "What types of companies do you work with?",
-    a: "Primarily DTC ecommerce brands and SaaS companies doing $5M-$100M+ in revenue. I work with companies that have outgrown their initial CX setup and need to professionalize operations.",
+    a: "Primarily DTC ecommerce brands and SaaS companies doing $5M-$100M+ in revenue. We work with companies that have outgrown their initial CX setup and need to professionalize operations.",
   },
   {
     q: "How long does a typical engagement last?",
-    a: "An audit is typically 2-3 weeks. Implementation projects range from 4-12 weeks depending on scope. I also offer ongoing advisory retainers for companies that want sustained strategic support.",
+    a: "An audit is typically 2-3 weeks. Implementation projects range from 4-12 weeks depending on scope. We also offer ongoing advisory retainers for companies that want sustained strategic support.",
   },
   {
     q: "Do you replace our existing team?",
-    a: "No. I work alongside your existing team to elevate their capabilities and build better systems. The goal is to make your team more effective, not to replace them.",
+    a: "No. We work alongside your existing team to elevate their capabilities and build better systems. The goal is to make your team more effective, not to replace them.",
   },
   {
     q: "What is your pricing model?",
-    a: "Engagements are scoped and priced on a project basis. I provide a detailed proposal after an initial strategy call so you know exactly what you are getting and what it costs.",
+    a: "Engagements are scoped and priced on a project basis. We provide a detailed proposal after an initial strategy call so you know exactly what you are getting and what it costs.",
   },
   {
     q: "Can you help us choose between Gorgias and Zendesk?",
-    a: "Yes. I have deep experience with both platforms and can make a recommendation based on your specific needs, volume, budget, and growth trajectory.",
+    a: "Yes. We have deep experience with both platforms and can make a recommendation based on your specific needs, volume, budget, and growth trajectory.",
   },
 ];
 
@@ -96,7 +96,7 @@ export default function ServicesPage() {
             </h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
               From diagnostic audits to hands-on system optimization to scaling
-              your team  - I cover the full lifecycle of CX operations
+              your team  - we cover the full lifecycle of CX operations
               improvement.
             </p>
           </div>

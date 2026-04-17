@@ -18,7 +18,7 @@ export default function HomePage() {
               <span className="text-teal">scale with your brand.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-400 leading-relaxed mb-8 max-w-2xl">
-              I help DTC and SaaS companies reduce ticket volume, improve CSAT,
+              We help DTC and SaaS companies reduce ticket volume, improve CSAT,
               and build support operations that grow without breaking.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -54,21 +54,21 @@ export default function HomePage() {
               />
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Most CX consultants know one world. I have operated in two. At{" "}
-                  <strong className="text-navy">Every Man Jack</strong>, I scaled a DTC
-                  support operation from the ground up  - cutting ticket volume by 40%
-                  through automation and self-service while maintaining 99th percentile
-                  CSAT scores.
+                  Most CX consultants know one world. We have operated in two. At{" "}
+                  <strong className="text-navy">Every Man Jack</strong>, where we worked
+                  together, we scaled a DTC support operation from the ground up  - cutting
+                  ticket volume by 40% through automation and self-service while maintaining
+                  99th percentile CSAT scores.
                 </p>
                 <p>
-                  At <strong className="text-navy">B-Stock Solutions</strong>, I managed
+                  At <strong className="text-navy">B-Stock Solutions</strong>, we managed
                   CX for a dual-sided SaaS marketplace serving Fortune 500 enterprise
                   clients and an international buyer base across online auction operations
                   for overstock and returns.
                 </p>
                 <p>
                   That combination  - DTC speed plus enterprise discipline  - is
-                  what I bring to every engagement.
+                  what we bring to every engagement.
                 </p>
               </div>
             </div>
@@ -87,8 +87,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
           <SectionHeading
             label="Services"
-            title="How I help brands scale CX."
-            description="From diagnostic audits to hands-on optimization, I deliver actionable strategies that reduce costs and improve customer satisfaction."
+            title="How we help brands scale CX."
+            description="From diagnostic audits to hands-on optimization, we deliver actionable strategies that reduce costs and improve customer satisfaction."
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ServiceCard
