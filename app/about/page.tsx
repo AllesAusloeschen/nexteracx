@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import SectionHeading from "../components/SectionHeading";
 import CTAButton from "../components/CTAButton";
 
@@ -18,15 +19,17 @@ const founders = [
   {
     name: "Mathias Dorr",
     title: "Co-Founder & CX Strategist",
+    photo: "/mathias-headshot.png",
     bio: [
       <>At <strong className="text-navy">Every Man Jack</strong>, Mathias owned the full DTC support operation for one of the fastest-growing men&apos;s grooming brands. He built automation systems that cut ticket volume by 40%, implemented QA frameworks that drove CSAT to the 99th percentile, and managed both in-house and offshore teams.</>,
       <>At <strong className="text-navy">B-Stock Solutions</strong>, he operated in a fundamentally different environment: a dual-sided SaaS marketplace serving Fortune 500 enterprise sellers and thousands of international buyers. He navigated enterprise stakeholder dynamics, built cross-border support processes, and managed the complexity of a platform where every ticket has two customers.</>,
-      <>He holds an <strong className="text-navy">MBA from Gonzaga University</strong>, grounding his operational instincts in strategic thinking.</>,
+      <>That range - from scrappy DTC operations to enterprise-grade SaaS - gives him a perspective most CX consultants simply do not have.</>,
     ],
   },
   {
     name: "Alyssa Provitt",
     title: "Co-Founder & CX Operations Lead",
+    photo: "/alyssa-headshot.png",
     bio: [
       <>Alyssa spent <strong className="text-navy">5 years at Every Man Jack</strong> as Sr Customer Experience and Operations Manager, where she led cross-functional operations spanning CX, supply chain, and process improvement.</>,
       <>She brings deep expertise in <strong className="text-navy">Zendesk, Gorgias, and knowledge base systems</strong>, with a track record of building scalable support workflows, improving customer retention, and streamlining operations across teams.</>,
@@ -35,43 +38,6 @@ const founders = [
   },
 ];
 
-const timeline = [
-  {
-    role: "Co-Founders, NextEraCX",
-    company: "NextEraCX",
-    period: "Present",
-    description:
-      "Helping DTC and SaaS brands build scalable, efficient CX operations through audits, systems optimization, and team development.",
-  },
-  {
-    role: "Sr CX and Operations Manager",
-    company: "Every Man Jack (Alyssa)",
-    period: "Jan 2020 - Jan 2025",
-    description:
-      "Led cross-functional CX and supply chain operations. Built scalable support processes, improved customer retention, and managed knowledge base and process improvement initiatives across teams.",
-  },
-  {
-    role: "CX Operations Manager",
-    company: "Every Man Jack (Mathias)",
-    period: "5+ years",
-    description:
-      "Built and scaled the entire DTC customer support operation. Drove a 40% reduction in ticket volume through automation and self-service initiatives. Achieved and maintained 99th percentile CSAT scores.",
-  },
-  {
-    role: "CX Operations Lead",
-    company: "B-Stock Solutions (Mathias)",
-    period: "4 years",
-    description:
-      "Managed customer experience for a dual-sided SaaS marketplace platform. Supported Fortune 500 enterprise seller clients and a global buyer base across online auction operations.",
-  },
-  {
-    role: "MBA",
-    company: "Gonzaga University (Mathias)",
-    period: "",
-    description:
-      "Master of Business Administration with focus on operations and strategy.",
-  },
-];
 
 export default function AboutPage() {
   return (
@@ -106,10 +72,14 @@ export default function AboutPage() {
               >
                 {/* Photo placeholder */}
                 <div className={`lg:col-span-2 flex justify-center ${i % 2 === 1 ? "lg:order-2" : ""}`}>
-                  <div className="w-full max-w-xs aspect-[3/4] rounded-lg bg-gray-100 border border-gray-200 flex items-center justify-center">
-                    <span className="text-sm text-gray-400 font-medium">
-                      Photo
-                    </span>
+                  <div className="w-full max-w-xs aspect-[3/4] rounded-lg overflow-hidden bg-gray-100 border border-gray-200">
+                    <Image
+                      src={founder.photo}
+                      alt={founder.name}
+                      width={320}
+                      height={427}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
 
@@ -200,41 +170,6 @@ export default function AboutPage() {
                 the engagement ends. No consultant dependency.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Career Timeline */}
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-3xl px-6 lg:px-8 py-20 md:py-24">
-          <SectionHeading label="Experience" title="Combined timeline." />
-          <div className="space-y-10">
-            {timeline.map((item, i) => (
-              <div
-                key={i}
-                className="relative pl-8 border-l-2 border-gray-200"
-              >
-                <div className="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-teal" />
-                <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 mb-2">
-                  <h3 className="text-lg font-semibold text-navy">
-                    {item.role}
-                  </h3>
-                  <span className="text-gray-400 hidden sm:inline">/</span>
-                  <span className="text-teal font-medium">{item.company}</span>
-                  {item.period && (
-                    <>
-                      <span className="text-gray-400 hidden sm:inline">/</span>
-                      <span className="text-sm text-gray-400">
-                        {item.period}
-                      </span>
-                    </>
-                  )}
-                </div>
-                <p className="text-gray-600 leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
