@@ -29,7 +29,7 @@ const founders = [
   {
     name: "Alyssa Provitt",
     title: "Co-Founder & CX Operations Lead",
-    photo: "/alyssa-headshot.png",
+    photo: "/alyssa-headshot.jpg",
     bio: [
       <>Alyssa spent <strong className="text-navy">5 years at Every Man Jack</strong> as Sr Customer Experience and Operations Manager, where she led cross-functional operations spanning CX, supply chain, and process improvement.</>,
       <>She brings deep expertise in <strong className="text-navy">Zendesk, Gorgias, and knowledge base systems</strong>, with a track record of building scalable support workflows, improving customer retention, and streamlining operations across teams.</>,
