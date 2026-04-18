@@ -19,7 +19,7 @@ const services = [
     id: "audit",
     title: "CX Operations Audit",
     description:
-      "A thorough diagnostic of your current support operations, technology stack, and team workflows. You get a clear picture of what is working, what is not, and exactly where the leverage points are.",
+      "Every touchpoint your customers hit tells a story. Most companies are not reading it. We audit your full CX operation - tech stack, workflows, team structure, and the micro-moments between tickets that quietly cost you customers and revenue.",
     deliverables: [
       "Full review of current CX tech stack and tool configuration",
       "Workflow mapping and bottleneck identification",
@@ -32,7 +32,7 @@ const services = [
     id: "optimization",
     title: "Systems Optimization",
     description:
-      "Hands-on implementation to get maximum value from your CX platform. Whether you are on Gorgias, Zendesk, or evaluating a migration, we configure and optimize your systems for efficiency and scale.",
+      "Your CX platform should be driving efficiency, not creating busywork. We get hands-on with Gorgias, Zendesk, or whatever you are running - configuring automations, building AI workflows, and eliminating the manual work that is eating your team's time.",
     deliverables: [
       "Gorgias or Zendesk setup, configuration, and migration",
       "Automation workflows (macros, rules, triggers)",
@@ -46,7 +46,7 @@ const services = [
     id: "scaling",
     title: "Team & Process Scaling",
     description:
-      "Build the people systems and processes that let your CX operation grow without proportionally growing headcount. From hiring to QA to international expansion.",
+      "Growth should not mean linearly adding headcount. We build the hiring frameworks, QA systems, and operational processes that let your CX team handle more volume without burning out or dropping quality.",
     deliverables: [
       "Hiring frameworks and interview processes for CX roles",
       "QA scoring systems and agent performance management",

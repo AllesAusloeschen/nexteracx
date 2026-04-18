@@ -15,12 +15,13 @@ export default function HomePage() {
               CX Operations Consulting
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
-              Build CX operations that{" "}
-              <span className="text-teal">scale with your brand.</span>
+              Turn your CX into a{" "}
+              <span className="text-teal">competitive advantage.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-400 leading-relaxed mb-8 max-w-2xl">
-              We help DTC and SaaS companies reduce ticket volume, improve CSAT,
-              and build support operations that grow without breaking.
+              Most companies treat support as a cost center. We turn it into
+              the reason customers stay, spend more, and refer others. Strategic
+              CX operations for DTC and SaaS brands ready to scale.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <CTAButton href="/contact">Book a Strategy Call</CTAButton>
@@ -38,7 +39,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             <StatCard value="40%" label="Ticket volume reduction" />
             <StatCard value="99th" label="Percentile CSAT" />
-            <StatCard value="9+" label="Years in CX operations" />
+            <StatCard value="14+" label="Combined years in CX ops" />
           </div>
         </div>
       </section>
@@ -55,19 +56,22 @@ export default function HomePage() {
               />
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Most CX consultants know one world. We have operated in two.
-                  We have scaled DTC support operations from the ground up -
-                  cutting ticket volume by 40% through automation and
-                  self-service while maintaining 99th percentile CSAT scores.
+                  Customer experience is not a department. It touches every part
+                  of your business - from the first touchpoint to post-purchase
+                  support to the micro-moments in between that most companies
+                  overlook entirely. Those overlooked moments are where you lose
+                  customers without ever knowing why.
                 </p>
                 <p>
-                  We have also managed CX for dual-sided SaaS marketplaces
-                  serving Fortune 500 enterprise clients and international
-                  buyer bases across complex operations.
+                  We have built CX operations across DTC ecommerce and
+                  enterprise SaaS - cutting ticket volume by 40%, maintaining
+                  99th percentile CSAT, and building systems that scale without
+                  throwing headcount at the problem.
                 </p>
                 <p>
-                  That combination - DTC speed plus enterprise discipline - is
-                  what we bring to every engagement.
+                  We do not operate like outside consultants. We embed with
+                  your team, build systems you can actually own, and leave you
+                  with operations that work long after the engagement ends.
                 </p>
               </div>
             </div>
@@ -95,7 +99,7 @@ export default function HomePage() {
           <SectionHeading
             label="Services"
             title="How we help brands scale CX."
-            description="From diagnostic audits to hands-on optimization, we deliver actionable strategies that reduce costs and improve customer satisfaction."
+            description="Every engagement is focused on measurable outcomes - retention, revenue, and operational efficiency. Not theory. Not slide decks. Real changes to how your CX operation runs."
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ServiceCard
@@ -133,11 +137,12 @@ export default function HomePage() {
       <section className="bg-navy text-white">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Ready to transform your CX operations?
+            Stop treating CX as a cost center.
           </h2>
           <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
-            Book a free strategy call to discuss your challenges and explore how
-            we can work together.
+            Book a free 30-minute strategy call. We will dig into your biggest
+            CX challenges and tell you exactly where the opportunities are.
+            No pitch, no pressure.
           </p>
           <CTAButton href="/contact">Book a Strategy Call</CTAButton>
         </div>
