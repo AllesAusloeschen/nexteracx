@@ -1,3 +1,4 @@
+import Image from "next/image";
 import CTAButton from "./components/CTAButton";
 import SectionHeading from "./components/SectionHeading";
 import ServiceCard from "./components/ServiceCard";
@@ -54,28 +55,34 @@ export default function HomePage() {
               />
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Most CX consultants know one world. We have operated in two. At{" "}
-                  <strong className="text-navy">Every Man Jack</strong>, where we worked
-                  together, we scaled a DTC support operation from the ground up  - cutting
-                  ticket volume by 40% through automation and self-service while maintaining
-                  99th percentile CSAT scores.
+                  Most CX consultants know one world. We have operated in two.
+                  We have scaled DTC support operations from the ground up -
+                  cutting ticket volume by 40% through automation and
+                  self-service while maintaining 99th percentile CSAT scores.
                 </p>
                 <p>
-                  At <strong className="text-navy">B-Stock Solutions</strong>, we managed
-                  CX for a dual-sided SaaS marketplace serving Fortune 500 enterprise
-                  clients and an international buyer base across online auction operations
-                  for overstock and returns.
+                  We have also managed CX for dual-sided SaaS marketplaces
+                  serving Fortune 500 enterprise clients and international
+                  buyer bases across complex operations.
                 </p>
                 <p>
-                  That combination  - DTC speed plus enterprise discipline  - is
+                  That combination - DTC speed plus enterprise discipline - is
                   what we bring to every engagement.
                 </p>
               </div>
             </div>
-            {/* Photo placeholder */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="w-full max-w-sm aspect-[4/5] rounded-lg bg-gray-100 border border-gray-200 flex items-center justify-center">
-                <span className="text-sm text-gray-400 font-medium">Photo</span>
+            <div className="flex justify-center lg:justify-end gap-6">
+              <div className="text-center">
+                <div className="w-40 h-48 rounded-lg overflow-hidden border border-gray-200 mb-3">
+                  <Image src="/mathias-headshot.png" alt="Mathias Dorr" width={160} height={192} className="w-full h-full object-cover" />
+                </div>
+                <p className="text-sm font-semibold text-navy">Mathias Dorr</p>
+              </div>
+              <div className="text-center">
+                <div className="w-40 h-48 rounded-lg overflow-hidden border border-gray-200 mb-3">
+                  <Image src="/alyssa-headshot.jpg" alt="Alyssa Provitt" width={160} height={192} className="w-full h-full object-cover" />
+                </div>
+                <p className="text-sm font-semibold text-navy">Alyssa Provitt</p>
               </div>
             </div>
           </div>
