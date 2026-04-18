@@ -6,11 +6,11 @@ import CTAButton from "../components/CTAButton";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Mathias Dorr and Alyssa Provitt are CX operations strategists with a combined 14+ years of experience across DTC and SaaS.",
+    "Mathias Dorr and Alyssa Provitt are CX operations strategists with a combined 20+ years of experience across DTC and SaaS.",
   openGraph: {
     title: "About | NextEraCX",
     description:
-      "CX operations strategists with 14+ years combined across DTC ecommerce and enterprise SaaS.",
+      "CX operations strategists with 20+ years combined across DTC ecommerce and enterprise SaaS.",
     url: "https://nexteracx.co/about",
   },
 };
@@ -21,8 +21,8 @@ const founders = [
     title: "Co-Founder & CX Strategist",
     photo: "/mathias-headshot.png",
     bio: [
-      <>At <strong className="text-navy">Every Man Jack</strong>, Mathias owned the full DTC support operation for one of the fastest-growing men&apos;s grooming brands. He built automation systems that cut ticket volume by 40%, implemented QA frameworks that drove CSAT to the 99th percentile, and managed both in-house and offshore teams.</>,
-      <>At <strong className="text-navy">B-Stock Solutions</strong>, he operated in a fundamentally different environment: a dual-sided SaaS marketplace serving Fortune 500 enterprise sellers and thousands of international buyers. He navigated enterprise stakeholder dynamics, built cross-border support processes, and managed the complexity of a platform where every ticket has two customers.</>,
+      <>With 10+ years across DTC ecommerce and enterprise SaaS, Mathias has built and scaled support operations from the ground up. He has driven 40% reductions in ticket volume through automation and self-service, implemented QA frameworks that maintained 99th percentile CSAT, and managed both in-house and offshore teams across multiple time zones.</>,
+      <>On the SaaS side, he managed CX for a dual-sided marketplace serving Fortune 500 enterprise clients and an international buyer base - navigating complex stakeholder dynamics, building cross-border support processes, and operating in an environment where every ticket has two customers.</>,
       <>That range - from scrappy DTC operations to enterprise-grade SaaS - gives him a perspective most CX consultants simply do not have.</>,
     ],
   },
@@ -31,9 +31,9 @@ const founders = [
     title: "Co-Founder & CX Operations Lead",
     photo: "/alyssa-headshot.jpg",
     bio: [
-      <>Alyssa spent <strong className="text-navy">5 years at Every Man Jack</strong> as Sr Customer Experience and Operations Manager, where she led cross-functional operations spanning CX, supply chain, and process improvement.</>,
-      <>She brings deep expertise in <strong className="text-navy">Zendesk, Gorgias, and knowledge base systems</strong>, with a track record of building scalable support workflows, improving customer retention, and streamlining operations across teams.</>,
-      <>Based in Houston, TX, Alyssa combines hands-on operational leadership with a systems-first mindset that turns complex CX challenges into repeatable, efficient processes.</>,
+      <>With 10+ years in CX and operations leadership, Alyssa has led cross-functional teams spanning customer experience, supply chain, and process improvement at high-growth DTC brands. She has built scalable support workflows, driven measurable improvements in customer retention, and managed end-to-end operational transformations.</>,
+      <>She brings deep expertise in <strong className="text-navy">Zendesk, Gorgias, and knowledge base systems</strong> - the platforms that power modern CX operations. Her approach is rooted in process design: building repeatable systems that scale without adding complexity.</>,
+      <>Based in Houston, TX, Alyssa combines hands-on operational leadership with a systems-first mindset that turns CX challenges into efficient, measurable processes.</>,
     ],
   },
 ];
@@ -54,8 +54,8 @@ export default function AboutPage() {
             </h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
               Two CX operators who have built, broken, and rebuilt support
-              operations at scale. 14+ combined years across DTC and SaaS.
-              Former colleagues at Every Man Jack, now partners at NextEraCX.
+              operations at scale. 20+ combined years across DTC and SaaS.
+              Former colleagues turned business partners at NextEraCX.
             </p>
           </div>
         </div>
@@ -109,12 +109,12 @@ export default function AboutPage() {
             title="Why we partnered."
           />
           <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
-            We worked together at Every Man Jack, building and scaling one of
-            the highest-performing CX operations in DTC. We saw the same thing
-            over and over: brands treating support as a cost center instead of
-            a growth lever. NextEraCX exists because we know what great CX ops
-            look like, and most companies are leaving money on the table by not
-            investing in it.
+            We spent years working side by side, building and scaling one of
+            the highest-performing CX operations in DTC ecommerce. We saw the
+            same pattern at company after company: CX treated as an
+            afterthought instead of a strategic advantage. NextEraCX exists
+            because we know what great CX ops look like, and most companies
+            are leaving money on the table by not investing in it.
           </p>
         </div>
       </section>

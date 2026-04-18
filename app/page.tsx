@@ -137,7 +137,7 @@ export default function HomePage() {
       <section className="bg-navy text-white">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Stop treating CX as a cost center.
+            Ready to make CX your unfair advantage?
           </h2>
           <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
             Book a free 30-minute strategy call. We will dig into your biggest
