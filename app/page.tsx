@@ -39,7 +39,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             <StatCard value="40%" label="Ticket volume reduction" />
             <StatCard value="99th" label="Percentile CSAT" />
-            <StatCard value="14+" label="Combined years in CX ops" />
+            <StatCard value="20+" label="Combined years in CX ops" />
           </div>
         </div>
       </section>
