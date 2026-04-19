@@ -5,11 +5,11 @@ import CTAButton from "../components/CTAButton";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "CX operations consulting services: audits, Gorgias/Zendesk optimization, automation, QA frameworks, and team scaling for DTC and SaaS brands.",
+    "AI-Ready CX Audit, AI Transition Implementation, and Ongoing Advisory for DTC brands moving from human-only to AI-augmented support operations.",
   openGraph: {
     title: "Services | NextEraCX",
     description:
-      "CX operations consulting services: audits, systems optimization, and team scaling.",
+      "AI tools are commodities. The strategy is the value. CX transition services for DTC brands.",
     url: "https://nexteracx.co/services",
   },
 };
@@ -17,67 +17,73 @@ export const metadata: Metadata = {
 const services = [
   {
     id: "audit",
-    title: "CX Operations Audit",
+    title: "AI-Ready CX Audit",
     description:
-      "Every touchpoint your customers hit tells a story. Most companies are not reading it. We audit your full CX operation - tech stack, workflows, team structure, and the micro-moments between tickets that quietly cost you customers and revenue.",
+      "Before you deploy AI agents, you need to know what they are walking into. Most DTC brands have knowledge bases full of outdated articles, automation rules built on top of each other, and escalation paths that exist in someone's head. This audit surfaces all of it and tells you exactly what needs to change before AI can take over tier 1.",
     deliverables: [
-      "Full review of current CX tech stack and tool configuration",
-      "Workflow mapping and bottleneck identification",
-      "Ticket categorization and volume analysis",
-      "Team structure and capacity assessment",
-      "Actionable recommendations report with prioritized roadmap",
+      "Knowledge base audit - coverage gaps, outdated content, structure for AI agent consumption",
+      "Automation rule review - what is working, what is conflicting, what is missing",
+      "Ticket pattern analysis - which categories are automatable, which need humans, and why",
+      "Escalation path mapping - current state vs. what AI handoff logic requires",
+      "AI readiness scorecard with prioritized recommendations",
+      "Gorgias/Zendesk configuration review",
+    ],
+    pricing: "Fixed fee: $2-3K | Timeline: 2 weeks | Deliverable: AI Readiness Report with prioritized roadmap",
+  },
+  {
+    id: "implementation",
+    title: "AI Transition Implementation",
+    description:
+      "Once you know what is ready, we build it. Hands-on work inside your Gorgias instance - restructuring your knowledge base so AI agents can actually use it, designing automation rules that route correctly, and building the handoff logic that determines when a conversation gets escalated to a human. The goal is not to replace your team. It is to let them focus on the conversations that actually need a person.",
+    deliverables: [
+      "Knowledge base restructuring and content rewriting for AI agent consumption",
+      "Gorgias Automate configuration and rule design",
+      "Handoff logic - triggers, sentiment thresholds, and escalation criteria",
+      "Macro and template updates for human agents handling escalated conversations",
+      "QA framework for monitoring AI agent accuracy and tone",
+      "Integration testing and soft launch support",
     ],
   },
   {
-    id: "optimization",
-    title: "Systems Optimization",
+    id: "advisory",
+    title: "Ongoing Advisory & Optimization",
     description:
-      "Your CX platform should be driving efficiency, not creating busywork. We get hands-on with Gorgias, Zendesk, or whatever you are running - configuring automations, building AI workflows, and eliminating the manual work that is eating your team's time.",
+      "AI agent performance is not set-and-forget. Ticket patterns shift, products change, customers ask new questions. We stay embedded on a monthly retainer to tune automation rules, expand AI coverage into new ticket categories, retrain on knowledge base updates, and make sure the handoff between AI and human agents stays clean.",
     deliverables: [
-      "Gorgias or Zendesk setup, configuration, and migration",
-      "Automation workflows (macros, rules, triggers)",
-      "AI agent implementation and training",
-      "Knowledge base architecture and content strategy",
-      "Reporting dashboards and KPI tracking",
-      "Integration with ecommerce and internal systems",
-    ],
-  },
-  {
-    id: "scaling",
-    title: "Team & Process Scaling",
-    description:
-      "Growth should not mean linearly adding headcount. We build the hiring frameworks, QA systems, and operational processes that let your CX team handle more volume without burning out or dropping quality.",
-    deliverables: [
-      "Hiring frameworks and interview processes for CX roles",
-      "QA scoring systems and agent performance management",
-      "Offshore and nearshore team sourcing and management",
-      "Escalation path design and tier structuring",
-      "International and cross-border support operations",
-      "Training programs and onboarding documentation",
+      "Monthly AI agent performance review - resolution rate, escalation rate, CSAT impact",
+      "Knowledge base maintenance and expansion",
+      "New automation opportunity identification",
+      "Escalation logic tuning based on real ticket data",
+      "Team alignment - keeping human agents informed and effective as AI coverage expands",
+      "Quarterly strategy review and roadmap update",
     ],
   },
 ];
 
 const faqs = [
   {
-    q: "What types of companies do you work with?",
-    a: "Primarily DTC ecommerce brands and SaaS companies doing $5M-$100M+ in revenue. We work with companies that have outgrown their initial CX setup and need to professionalize operations.",
+    q: "Do we need to be on Gorgias?",
+    a: "We are deepest on Gorgias, which is where most Shopify-native DTC brands live. We also work with Zendesk. If you are on something else, we can discuss whether we are the right fit on a call.",
   },
   {
-    q: "How long does a typical engagement last?",
-    a: "An audit is typically 2-3 weeks. Implementation projects range from 4-12 weeks depending on scope. We also offer ongoing advisory retainers for companies that want sustained strategic support.",
+    q: "What size companies do you work with?",
+    a: "DTC ecommerce brands doing roughly $5M-$100M in revenue. Big enough that CX volume is a real operational challenge, but not so big that you need enterprise multi-agent architecture.",
   },
   {
-    q: "Do you replace our existing team?",
-    a: "No. We work alongside your existing team to elevate their capabilities and build better systems. The goal is to make your team more effective, not to replace them.",
+    q: "Are you going to replace our CX team with AI?",
+    a: "No. We design the transition so your human agents handle the conversations that actually need a person - complex issues, emotional moments, high-value customers. AI handles the repetitive tier 1 volume. Your team gets better work, not no work.",
   },
   {
-    q: "What is your pricing model?",
-    a: "Engagements are scoped and priced on a project basis. We provide a detailed proposal after an initial strategy call so you know exactly what you are getting and what it costs.",
+    q: "How current is your AI agent expertise?",
+    a: "We are practitioners, not theorists. The AI agent landscape - especially Gorgias Automate - has evolved significantly in 2025. We stay current because we are actively building with these tools, not just advising from the sidelines.",
   },
   {
-    q: "Can you help us choose between Gorgias and Zendesk?",
-    a: "Yes. We have deep experience with both platforms and can make a recommendation based on your specific needs, volume, budget, and growth trajectory.",
+    q: "What does the audit actually deliver?",
+    a: "A written AI Readiness Report covering your knowledge base, automation rules, escalation paths, and ticket patterns - all scored against what modern AI agents need to function well. Plus a prioritized roadmap. 2 weeks, $2-3K.",
+  },
+  {
+    q: "What if we already have automation set up?",
+    a: "Most brands do. And most of it was built before modern AI agents existed. The audit evaluates what you have, identifies what is helping vs. what is creating conflicts, and shows you what needs to change.",
   },
 ];
 
@@ -92,12 +98,12 @@ export default function ServicesPage() {
               Services
             </p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6">
-              CX operations consulting, end to end.
+              AI tools are commodities. The strategy is the value.
             </h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
-              From diagnostic audits to hands-on system optimization to scaling
-              your team  - we cover the full lifecycle of CX operations
-              improvement.
+              Everyone can buy Gorgias Automate. The hard part is knowing what
+              to automate, where to keep humans, and how to design the handoff
+              between them. That is what we do.
             </p>
           </div>
         </div>
@@ -105,84 +111,75 @@ export default function ServicesPage() {
 
       {/* Services Detail */}
       <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 py-20 md:py-24">
           <div className="space-y-20">
-            {services.map((service, i) => (
-              <div
-                key={service.id}
-                id={service.id}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-start ${
-                  i > 0 ? "pt-20 border-t border-gray-200" : ""
-                }`}
-              >
-                <div>
-                  <span className="text-teal text-sm font-semibold uppercase tracking-wider">
-                    0{i + 1}
-                  </span>
-                  <h2 className="text-3xl font-bold text-navy tracking-tight mt-2 mb-4">
-                    {service.title}
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed text-lg">
-                    {service.description}
-                  </p>
-                </div>
-                <div>
+            {services.map((service) => (
+              <div key={service.id} id={service.id}>
+                <h2 className="text-2xl md:text-3xl font-bold text-navy mb-4">
+                  {service.title}
+                </h2>
+                <p className="text-gray-600 leading-relaxed mb-8">
+                  {service.description}
+                </p>
+                <div className="bg-gray-50 rounded-xl p-6">
                   <h3 className="text-sm font-semibold uppercase tracking-wider text-navy mb-4">
                     What you get
                   </h3>
                   <ul className="space-y-3">
                     {service.deliverables.map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <svg
-                          className="h-5 w-5 text-teal mt-0.5 shrink-0"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth={2}
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M4.5 12.75l6 6 9-13.5"
-                          />
-                        </svg>
-                        <span className="text-gray-600">{item}</span>
+                      <li
+                        key={item}
+                        className="flex items-start gap-3 text-sm text-gray-600"
+                      >
+                        <span className="text-teal mt-0.5 flex-shrink-0">
+                          ✓
+                        </span>
+                        {item}
                       </li>
                     ))}
                   </ul>
                 </div>
+                {service.pricing && (
+                  <div className="mt-6 rounded-xl bg-teal/10 border border-teal/20 p-6 text-center">
+                    <p className="text-sm font-semibold text-navy">
+                      {service.pricing}
+                    </p>
+                  </div>
+                )}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Pricing note */}
+      {/* Pricing */}
       <section className="bg-gray-50">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8 py-16 text-center">
-          <h2 className="text-2xl font-bold text-navy mb-3">
-            Pricing tailored to your needs.
-          </h2>
-          <p className="text-gray-600 max-w-xl mx-auto mb-6">
-            Every engagement is scoped based on your specific challenges, team
-            size, and goals. Book a call to discuss your situation and receive a
-            detailed proposal.
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 py-20 md:py-24">
+          <SectionHeading
+            label="Pricing"
+            title="Start with the audit."
+          />
+          <p className="text-center text-gray-600 leading-relaxed max-w-2xl mx-auto mb-8">
+            Every engagement begins with the AI-Ready CX Audit. It is a
+            standalone deliverable - you get a complete AI readiness report
+            whether or not you continue to implementation. Most brands that see
+            their audit results want to keep going, but there is no pressure
+            and no lock-in.
           </p>
-          <CTAButton href="/contact">Request a Quote</CTAButton>
+          <div className="text-center">
+            <CTAButton href="/contact">Get Your AI-Ready Audit</CTAButton>
+          </div>
         </div>
       </section>
 
       {/* FAQ */}
       <section className="bg-white">
         <div className="mx-auto max-w-3xl px-6 lg:px-8 py-20 md:py-24">
-          <SectionHeading
-            label="FAQ"
-            title="Common questions."
-          />
+          <SectionHeading label="FAQ" title="Common questions." />
           <div className="space-y-8">
             {faqs.map((faq) => (
               <div key={faq.q}>
-                <h3 className="text-lg font-semibold text-navy mb-2">
+                <h3 className="text-base font-semibold text-navy mb-2">
                   {faq.q}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">{faq.a}</p>
@@ -196,14 +193,13 @@ export default function ServicesPage() {
       <section className="bg-navy text-white">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Let&apos;s talk about your CX operations.
+            Your next hire might not be human.
           </h2>
           <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
-            Book a free strategy call. No pitch decks, no pressure  - just
-            an honest conversation about where your CX ops stand and where they
-            could go.
+            But it still needs someone to design its job. Start with the
+            AI-Ready CX Audit.
           </p>
-          <CTAButton href="/contact">Book a Strategy Call</CTAButton>
+          <CTAButton href="/contact">Get Your AI-Ready Audit</CTAButton>
         </div>
       </section>
     </>

@@ -43,7 +43,7 @@ export default function Header() {
               href="/contact"
               className="inline-flex items-center justify-center rounded-md bg-teal px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-teal-dark"
             >
-              Book a Call
+              Get Your AI-Ready Audit
             </Link>
           </div>
 
@@ -88,7 +88,7 @@ export default function Header() {
               className="block w-full text-center rounded-md bg-teal px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-teal-dark"
               onClick={() => setMobileOpen(false)}
             >
-              Book a Call
+              Get Your AI-Ready Audit
             </Link>
           </div>
         )}

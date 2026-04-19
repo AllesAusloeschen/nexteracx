@@ -6,11 +6,11 @@ import CTAButton from "../components/CTAButton";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Mathias Dorr and Alyssa Provitt are CX operations strategists with a combined 20+ years of experience across DTC and SaaS.",
+    "Mathias Dorr and Alyssa Provitt - 20+ combined years building CX operations. Now helping DTC brands transition to AI-augmented support.",
   openGraph: {
     title: "About | NextEraCX",
     description:
-      "CX operations strategists with 20+ years combined across DTC ecommerce and enterprise SaaS.",
+      "We built CX the old way. Now we help brands cross to what is next.",
     url: "https://nexteracx.co/about",
   },
 };
@@ -18,26 +18,25 @@ export const metadata: Metadata = {
 const founders = [
   {
     name: "Mathias Dorr",
-    title: "Co-Founder & CX Strategist",
+    title: "Co-Founder",
     photo: "/mathias-headshot.png",
     bio: [
-      <>With 10+ years across DTC ecommerce and enterprise SaaS, Mathias has built and scaled support operations from the ground up. He has driven 40% reductions in ticket volume through automation and self-service, implemented QA frameworks that maintained 99th percentile CSAT, and managed both in-house and offshore teams across multiple time zones.</>,
-      <>On the SaaS side, he managed CX for a dual-sided marketplace serving Fortune 500 enterprise clients and an international buyer base - navigating complex stakeholder dynamics, building cross-border support processes, and operating in an environment where every ticket has two customers.</>,
-      <>That range - from scrappy DTC operations to enterprise-grade SaaS - gives him a perspective most CX consultants simply do not have.</>,
+      <>10+ years building CX operations across DTC ecommerce and enterprise environments. Led the work that sounds boring but makes everything else possible - knowledge base architecture, automation rule design, QA scoring systems, escalation path logic. Drove a 40% reduction in ticket volume through automation while maintaining 99th percentile CSAT.</>,
+      <>That operational foundation - the SOPs, the knowledge structures, the escalation logic - turns out to be exactly what AI agents need to perform. An AI agent reading a well-structured knowledge base with clear escalation rules is a different animal than one reading a mess. That realization is what led to NextEraCX.</>,
+      <>Now focused on helping DTC brands make the transition from human-only to AI-augmented CX without losing the customer relationships they have spent years building.</>,
     ],
   },
   {
     name: "Alyssa Provitt",
-    title: "Co-Founder & CX Operations Lead",
+    title: "Co-Founder",
     photo: "/alyssa-headshot.jpg",
     bio: [
-      <>With 10+ years in CX and operations leadership, Alyssa has led cross-functional teams spanning customer experience, supply chain, and process improvement at high-growth DTC brands. She has built scalable support workflows, driven measurable improvements in customer retention, and managed end-to-end operational transformations.</>,
-      <>She brings deep expertise in <strong className="text-navy">Zendesk, Gorgias, and knowledge base systems</strong> - the platforms that power modern CX operations. Her approach is rooted in process design: building repeatable systems that scale without adding complexity.</>,
-      <>Based in Houston, TX, Alyssa combines hands-on operational leadership with a systems-first mindset that turns CX challenges into efficient, measurable processes.</>,
+      <>10+ years in CX and operations leadership at high-growth DTC brands. Built scalable support workflows, led cross-functional teams, and managed end-to-end operational transformations. Deep expertise in Gorgias, Zendesk, and the knowledge base systems that power modern CX.</>,
+      <>Her approach has always been systems-first - build repeatable processes that scale without adding complexity. That same thinking applies directly to AI transition: you do not just turn on an AI agent. You design the system it operates within - what it can access, when it escalates, how you measure its performance.</>,
+      <>Based in Houston, TX. Focused on the operational side of AI transition - making sure implementations actually work in production, not just in demos.</>,
     ],
   },
 ];
-
 
 export default function AboutPage() {
   return (
@@ -50,12 +49,13 @@ export default function AboutPage() {
               About Us
             </p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6">
-              Meet the Team
+              We built CX the old way. Now we help brands cross to what&apos;s next.
             </h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
-              Two CX operators who have built, broken, and rebuilt support
-              operations at scale. 20+ combined years across DTC and SaaS.
-              Former colleagues turned business partners at NextEraCX.
+              20+ combined years building support operations from scratch -
+              SOPs, QA frameworks, knowledge bases, Gorgias configurations,
+              offshore teams. That foundation is exactly what AI agents need
+              to work. We are the bridge.
             </p>
           </div>
         </div>
@@ -68,9 +68,8 @@ export default function AboutPage() {
             {founders.map((founder, i) => (
               <div
                 key={founder.name}
-                className={`grid grid-cols-1 lg:grid-cols-5 gap-12 items-start ${i % 2 === 1 ? "lg:direction-rtl" : ""}`}
+                className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start"
               >
-                {/* Photo placeholder */}
                 <div className={`lg:col-span-2 flex justify-center ${i % 2 === 1 ? "lg:order-2" : ""}`}>
                   <div className="w-full max-w-xs aspect-[3/4] rounded-lg overflow-hidden bg-gray-100 border border-gray-200">
                     <Image
@@ -83,7 +82,6 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                {/* Bio */}
                 <div className={`lg:col-span-3 space-y-5 text-gray-600 leading-relaxed ${i % 2 === 1 ? "lg:order-1" : ""}`}>
                   <div>
                     <h2 className="text-2xl md:text-3xl font-bold text-navy mb-1">
@@ -101,20 +99,24 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* The Partnership */}
+      {/* Our Story */}
       <section className="bg-gray-50">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 py-20 md:py-24 text-center">
           <SectionHeading
             label="Our Story"
-            title="Why we partnered."
+            title="From operators to architects."
           />
           <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
-            We spent years working side by side, building and scaling one of
-            the highest-performing CX operations in DTC ecommerce. We saw the
-            same pattern at company after company: CX treated as an
-            afterthought instead of a strategic advantage. NextEraCX exists
-            because we know what great CX ops look like, and most companies
-            are leaving money on the table by not investing in it.
+            We spent years working side by side, building one of the
+            highest-performing CX operations in DTC ecommerce. When we saw AI
+            agents start to mature in 2024-2025, we realized two things: first,
+            that most brands were going to adopt these tools whether they were
+            ready or not. Second, that the operational work we had spent a
+            decade doing - knowledge bases, SOPs, escalation logic, QA
+            frameworks - was the exact foundation that determined whether AI
+            agents succeed or fail. NextEraCX exists to help brands build that
+            foundation and make the transition without breaking what is already
+            working.
           </p>
         </div>
       </section>
@@ -124,7 +126,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
           <SectionHeading
             label="Approach"
-            title="How we think about CX operations."
+            title="How we think about the transition."
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="text-center p-6">
@@ -134,26 +136,27 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-navy mb-2">
-                Data-driven decisions
+                Foundations first
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Every recommendation is grounded in actual ticket data, handle
-                times, and resolution patterns. No guesswork.
+                AI agents are only as good as the knowledge base they read, the
+                rules they follow, and the escalation logic they trigger. We
+                build that foundation before anything gets turned on.
               </p>
             </div>
             <div className="text-center p-6">
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-teal/10 text-teal mx-auto mb-4">
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-navy mb-2">
-                Systems over headcount
+                Design the handoff
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                The best CX operations scale through better systems, not just
-                more people. Automation and process design come first.
+                The moment a conversation shifts from AI to human is where most
+                implementations break. We design that handoff with specific
+                triggers, sentiment awareness, and clear routing.
               </p>
             </div>
             <div className="text-center p-6">
@@ -163,11 +166,12 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-navy mb-2">
-                Built to last
+                Measure what matters
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We build operations that your team can own and maintain long after
-                the engagement ends. No consultant dependency.
+                AI agent accuracy, escalation rates, CSAT during transition,
+                resolution quality. We build the QA frameworks that tell you
+                whether the transition is working.
               </p>
             </div>
           </div>
@@ -178,13 +182,13 @@ export default function AboutPage() {
       <section className="bg-navy text-white">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Let&apos;s work together.
+            Ready to see what the transition looks like for your brand?
           </h2>
           <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
-            If your CX operations need strategic attention, we would like to
-            hear about it.
+            Start with the AI-Ready CX Audit. Two weeks, fixed fee, clear
+            deliverables.
           </p>
-          <CTAButton href="/contact">Book a Strategy Call</CTAButton>
+          <CTAButton href="/contact">Get Your AI-Ready Audit</CTAButton>
         </div>
       </section>
     </>

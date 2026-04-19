@@ -12,21 +12,23 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-24 md:py-32">
           <div className="max-w-3xl">
             <p className="text-teal text-sm font-semibold uppercase tracking-wider mb-4">
-              CX Operations Consulting
+              AI-Ready CX Operations
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
-              Turn your CX into a{" "}
-              <span className="text-teal">competitive advantage.</span>
+              Your competitors&apos; customers{" "}
+              <span className="text-teal">aren&apos;t waiting on hold.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-400 leading-relaxed mb-8 max-w-2xl">
-              Most companies treat support as a cost center. We turn it into
-              the reason customers stay, spend more, and refer others. Strategic
-              CX operations for DTC and SaaS brands ready to scale.
+              AI agents are already handling tier 1 support at the brands you
+              compete with. The question is not whether to deploy them - it is
+              whether your CX operation is ready for the transition. We help
+              DTC brands move from human-only to AI-augmented support without
+              losing the customer relationships you have built.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <CTAButton href="/contact">Book a Strategy Call</CTAButton>
+              <CTAButton href="/contact">Get Your AI-Ready Audit</CTAButton>
               <CTAButton href="/services" variant="outline">
-                View Services
+                See How It Works
               </CTAButton>
             </div>
           </div>
@@ -37,41 +39,45 @@ export default function HomePage() {
       <section className="border-b border-gray-200">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-            <StatCard value="40%" label="Ticket volume reduction" />
-            <StatCard value="99th" label="Percentile CSAT" />
+            <StatCard value="40%" label="Ticket volume reduced through automation" />
+            <StatCard value="99th" label="Percentile CSAT - during the transition" />
             <StatCard value="20+" label="Combined years in CX ops" />
           </div>
         </div>
       </section>
 
-      {/* Intro / Dual Expertise */}
+      {/* Why NextEraCX */}
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <SectionHeading
                 label="Why NextEraCX"
-                title="DTC agility meets enterprise rigor."
+                title="The bridge between old-school CX and what&apos;s next."
                 centered={false}
               />
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Customer experience is not a department. It touches every part
-                  of your business - from the first touchpoint to post-purchase
-                  support to the micro-moments in between that most companies
-                  overlook entirely. Those overlooked moments are where you lose
-                  customers without ever knowing why.
+                  Every DTC brand on Shopify is about to face the same decision:
+                  keep scaling support the old way - more agents, more cost,
+                  same problems - or figure out how to deploy AI agents without
+                  alienating your best customers. Most AI vendors will sell you
+                  tools. Nobody is designing the transition.
                 </p>
                 <p>
-                  We have built CX operations across DTC ecommerce and
-                  enterprise SaaS - cutting ticket volume by 40%, maintaining
-                  99th percentile CSAT, and building systems that scale without
-                  throwing headcount at the problem.
+                  We have spent a combined 20 years building CX operations the
+                  traditional way - SOPs, QA frameworks, escalation paths,
+                  Gorgias configurations, knowledge bases. That foundation is
+                  exactly what AI agents need to work. An AI agent is only as
+                  good as the knowledge base it reads and the escalation logic
+                  it follows. We know how to build both.
                 </p>
                 <p>
-                  We do not operate like outside consultants. We embed with
-                  your team, build systems you can actually own, and leave you
-                  with operations that work long after the engagement ends.
+                  The real skill is not deploying the AI. It is designing the
+                  handoff - the exact moment a conversation needs a human. Get
+                  that wrong, and your automation becomes a customer churn
+                  machine. Get it right, and your team handles the moments that
+                  matter while AI handles the rest.
                 </p>
               </div>
             </div>
@@ -98,8 +104,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
           <SectionHeading
             label="Services"
-            title="How we help brands scale CX."
-            description="Every engagement is focused on measurable outcomes - retention, revenue, and operational efficiency. Not theory. Not slide decks. Real changes to how your CX operation runs."
+            title="How we help brands make the transition."
+            description="Every engagement starts with understanding where you are today and what needs to be true before AI agents can handle your tier 1 volume."
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ServiceCard
@@ -108,8 +114,8 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15a2.25 2.25 0 012.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V19.5a2.25 2.25 0 002.25 2.25h.75" />
                 </svg>
               }
-              title="CX Operations Audit"
-              description="Comprehensive review of your tech stack, workflows, and team structure with an actionable recommendations report."
+              title="AI-Ready CX Audit"
+              description="A 2-week diagnostic of your CX operation - knowledge base, automation rules, escalation paths, ticket patterns - scored against what modern AI agents need to perform. Fixed fee. Clear deliverables."
             />
             <ServiceCard
               icon={
@@ -117,17 +123,17 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17l-5.1-5.1m0 0L11.42 4.97m-5.1 5.1H21M3 3v18" />
                 </svg>
               }
-              title="Systems Optimization"
-              description="Gorgias and Zendesk setup, automation workflows, AI agent implementation, and knowledge management systems."
+              title="AI Transition Implementation"
+              description="Hands-on buildout: knowledge base restructuring, automation rule design, handoff logic between AI and human agents, QA frameworks. Gorgias-native."
             />
             <ServiceCard
               icon={
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
                 </svg>
               }
-              title="Team & Process Scaling"
-              description="Hiring frameworks, QA systems, offshore team management, escalation paths, and international support operations."
+              title="Ongoing Advisory"
+              description="Monthly retainer for brands mid-transition. Continuous optimization of AI agent performance, escalation tuning, and keeping your team aligned as the operation evolves."
             />
           </div>
         </div>
@@ -137,14 +143,15 @@ export default function HomePage() {
       <section className="bg-navy text-white">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24 text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Ready to make CX your unfair advantage?
+            Find out if your CX operation is ready for AI agents.
           </h2>
-          <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
-            Book a free 30-minute strategy call. We will dig into your biggest
-            CX challenges and tell you exactly where the opportunities are.
-            No pitch, no pressure.
+          <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
+            The AI-Ready CX Audit is a fixed-fee, 2-week engagement. You get a
+            clear picture of what is ready to automate, what needs human hands,
+            and exactly how to design the transition. No ongoing commitment
+            required.
           </p>
-          <CTAButton href="/contact">Book a Strategy Call</CTAButton>
+          <CTAButton href="/contact">Get Your AI-Ready Audit</CTAButton>
         </div>
       </section>
     </>

@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import ContactForm from "../components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Get Started",
   description:
-    "Book a free CX operations strategy call or send a message. Let's discuss how to improve your customer experience operations.",
+    "Book an AI-Ready CX Audit scoping call or send us a message. Find out if your CX operation is ready for AI agents.",
   openGraph: {
-    title: "Contact | NextEraCX",
+    title: "Get Started | NextEraCX",
     description:
-      "Book a free strategy call or get in touch to discuss your CX operations.",
+      "Start with the AI-Ready CX Audit. 2 weeks, fixed fee, clear deliverables.",
     url: "https://nexteracx.co/contact",
   },
 };
@@ -21,14 +21,16 @@ export default function ContactPage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-28">
           <div className="max-w-3xl">
             <p className="text-teal text-sm font-semibold uppercase tracking-wider mb-4">
-              Contact
+              Get Started
             </p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6">
-              Let&apos;s talk.
+              Start with the AI-Ready CX Audit.
             </h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
-              Book a free strategy call or send us a message. No sales pitch
-               - just an honest conversation about your CX operations.
+              Book a call to scope the audit for your brand, or send us a
+              message with details about your current setup. No pitch - just an
+              honest conversation about whether your CX operation is ready for
+              AI agents.
             </p>
           </div>
         </div>
@@ -38,14 +40,15 @@ export default function ContactPage() {
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Calendly Embed Placeholder */}
+            {/* Calendly Embed */}
             <div>
               <h2 className="text-2xl font-bold text-navy mb-2">
-                Book a Strategy Call
+                Book an Audit Scoping Call
               </h2>
               <p className="text-gray-600 mb-6">
-                Pick a time that works for you. Calls are 30 minutes, free, and
-                focused on understanding your CX challenges.
+                Pick a time that works. We will walk through your current CX
+                setup, ticket volume, and tech stack to scope the audit. 30
+                minutes, free.
               </p>
 
               <iframe
@@ -53,7 +56,7 @@ export default function ContactPage() {
                 width="100%"
                 height="700"
                 frameBorder="0"
-                title="Schedule a strategy call"
+                title="Schedule an audit scoping call"
                 className="rounded-lg border border-gray-200"
               />
             </div>
@@ -68,30 +71,34 @@ export default function ContactPage() {
                 within one business day.
               </p>
               <ContactForm />
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Additional contact info */}
-      <section className="bg-gray-50 border-t border-gray-200">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-navy mb-2">
-                Response Time
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Within one business day for all inquiries.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-navy mb-2">
-                Location
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Remote / US-based
-              </p>
+              {/* Info */}
+              <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-navy mb-2">
+                    Response Time
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Within one business day for all inquiries.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-navy mb-2">
+                    Location
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Remote / US-based
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-navy mb-2">
+                    Audit Timeline
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    2 weeks from kickoff to AI Readiness Report.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -12,26 +12,26 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "NextEraCX | CX Operations Consulting",
+    default: "NextEraCX | AI-Ready CX for DTC Brands",
     template: "%s | NextEraCX",
   },
   description:
-    "Strategic CX operations consulting for DTC and SaaS brands. Audits, systems optimization, and team scaling by Mathias Dorr and Alyssa Provitt.",
+    "We help DTC brands transition from human-only to AI-augmented CX operations. AI-Ready CX Audits, transition implementation, and ongoing advisory.",
   metadataBase: new URL("https://nexteracx.co"),
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://nexteracx.co",
     siteName: "NextEraCX",
-    title: "NextEraCX | CX Operations Consulting",
+    title: "NextEraCX | AI-Ready CX for DTC Brands",
     description:
-      "Strategic CX operations consulting for DTC and SaaS brands. Audits, systems optimization, and team scaling.",
+      "We help DTC brands transition from human-only to AI-augmented CX operations. AI-Ready CX Audits, transition implementation, and ongoing advisory.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "NextEraCX | CX Operations Consulting",
+    title: "NextEraCX | AI-Ready CX for DTC Brands",
     description:
-      "Strategic CX operations consulting for DTC and SaaS brands.",
+      "We help DTC brands transition from human-only to AI-augmented CX operations. AI-Ready CX Audits, transition implementation, and ongoing advisory.",
   },
   robots: {
     index: true,
