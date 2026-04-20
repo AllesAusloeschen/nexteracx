@@ -29,7 +29,7 @@ const founders = [
   {
     name: "Alyssa Provitt",
     title: "Co-Founder",
-    photo: "/alyssa-headshot.jpg",
+    photo: "/alyssa-headshot.png",
     bio: [
       <>10+ years in CX and operations leadership at high-growth DTC brands. Built scalable support workflows, led cross-functional teams, and managed end-to-end operational transformations. Deep expertise in Gorgias, Zendesk, and the knowledge base systems that power modern CX.</>,
       <>Her approach has always been systems-first - build repeatable processes that scale without adding complexity. That same thinking applies directly to AI transition: you do not just turn on an AI agent. You design the system it operates within - what it can access, when it escalates, how you measure its performance.</>,

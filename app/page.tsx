@@ -90,7 +90,7 @@ export default function HomePage() {
               </div>
               <div className="text-center">
                 <div className="w-40 h-48 rounded-lg overflow-hidden border border-gray-200 mb-3">
-                  <Image src="/alyssa-headshot.jpg" alt="Alyssa Provitt" width={160} height={192} className="w-full h-full object-cover" />
+                  <Image src="/alyssa-headshot.png" alt="Alyssa Provitt" width={160} height={192} className="w-full h-full object-cover" />
                 </div>
                 <p className="text-sm font-semibold text-navy">Alyssa Provitt</p>
               </div>
