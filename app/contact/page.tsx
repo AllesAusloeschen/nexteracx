@@ -4,7 +4,7 @@ import ContactForm from "../components/ContactForm";
 export const metadata: Metadata = {
   title: "Get Started",
   description:
-    "Book an AI-Ready CX Audit scoping call or send us a message. Find out if your CX operation is ready for AI agents.",
+    "Book an AI-Ready CX Audit scoping call or send me a message. Find out if your CX operation is ready for AI agents.",
   openGraph: {
     title: "Get Started | NextEraCX",
     description:
@@ -27,7 +27,7 @@ export default function ContactPage() {
               Start with the AI-Ready CX Audit.
             </h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
-              Book a call to scope the audit for your brand, or send us a
+              Book a call to scope the audit for your brand, or send me a
               message with details about your current setup. No pitch - just an
               honest conversation about whether your CX operation is ready for
               AI agents.
@@ -47,8 +47,8 @@ export default function ContactPage() {
               </h2>
               <p className="text-gray-600 mb-6">
                 Pick a time that works. We will walk through your current CX
-                setup, ticket volume, and tech stack to scope the audit. 30
-                minutes, free.
+                setup, ticket volume, and tech stack together to scope the
+                audit. 30 minutes, free.
               </p>
 
               <iframe
@@ -67,7 +67,7 @@ export default function ContactPage() {
                 Send a Message
               </h2>
               <p className="text-gray-600 mb-6">
-                Prefer to write? Send us the details and we will get back to you
+                Prefer to write? Send me the details and I will get back to you
                 within one business day.
               </p>
               <ContactForm />

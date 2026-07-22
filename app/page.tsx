@@ -15,15 +15,15 @@ export default function HomePage() {
               AI-Ready CX Operations
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
-              Your competitors&apos; customers{" "}
-              <span className="text-teal">aren&apos;t waiting on hold.</span>
+              AI-enabled CX operations.{" "}
+              <span className="text-teal">Built, shipped, and measured.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-400 leading-relaxed mb-8 max-w-2xl">
-              AI agents are already handling tier 1 support at the brands you
-              compete with. The question is not whether to deploy them - it is
-              whether your CX operation is ready for the transition. We help
-              DTC brands move from human-only to AI-augmented support without
-              losing the customer relationships you have built.
+              Your competitors&apos; customers aren&apos;t waiting on hold - AI
+              agents are already handling tier 1 support at the brands you
+              compete with. I help DTC brands move from human-only to
+              AI-augmented support without losing the customer relationships
+              they have built.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <CTAButton href="/contact">Get Your AI-Ready Audit</CTAButton>
@@ -41,7 +41,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             <StatCard value="40%" label="Ticket volume reduced through automation" />
             <StatCard value="99th" label="Percentile CSAT - during the transition" />
-            <StatCard value="20+" label="Combined years in CX ops" />
+            <StatCard value="10+" label="Years in CX ops" />
           </div>
         </div>
       </section>
@@ -65,12 +65,12 @@ export default function HomePage() {
                   tools. Nobody is designing the transition.
                 </p>
                 <p>
-                  We have spent a combined 20 years building CX operations the
+                  I have spent 10+ years building CX operations the
                   traditional way - SOPs, QA frameworks, escalation paths,
                   Gorgias configurations, knowledge bases. That foundation is
                   exactly what AI agents need to work. An AI agent is only as
                   good as the knowledge base it reads and the escalation logic
-                  it follows. We know how to build both.
+                  it follows. I know how to build both.
                 </p>
                 <p>
                   The real skill is not deploying the AI. It is designing the
@@ -81,18 +81,13 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="flex justify-center lg:justify-end gap-6">
+            <div className="flex justify-center lg:justify-end">
               <div className="text-center">
-                <div className="w-40 h-48 rounded-lg overflow-hidden border border-gray-200 mb-3">
-                  <Image src="/mathias-headshot.png" alt="Mathias Dorr" width={160} height={192} className="w-full h-full object-cover" />
+                <div className="w-48 h-60 rounded-lg overflow-hidden border border-gray-200 mb-3">
+                  <Image src="/mathias-headshot.png" alt="Mathias Dorr" width={192} height={240} className="w-full h-full object-cover" />
                 </div>
                 <p className="text-sm font-semibold text-navy">Mathias Dorr</p>
-              </div>
-              <div className="text-center">
-                <div className="w-40 h-48 rounded-lg overflow-hidden border border-gray-200 mb-3">
-                  <Image src="/alyssa-headshot.png" alt="Alyssa Provitt" width={160} height={192} className="w-full h-full object-cover" />
-                </div>
-                <p className="text-sm font-semibold text-navy">Alyssa Provitt</p>
+                <p className="text-xs text-gray-600">Principal</p>
               </div>
             </div>
           </div>
@@ -104,7 +99,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
           <SectionHeading
             label="Services"
-            title="How we help brands make the transition."
+            title="How I help brands make the transition."
             description="Every engagement starts with understanding where you are today and what needs to be true before AI agents can handle your tier 1 volume."
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -135,6 +130,49 @@ export default function HomePage() {
               title="Ongoing Advisory"
               description="Monthly retainer for brands mid-transition. Continuous optimization of AI agent performance, escalation tuning, and keeping your team aligned as the operation evolves."
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Recent Work */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
+          <SectionHeading
+            label="Recent Work"
+            title="Not just advising - building."
+            description="Production systems shipped and running today, hands-on with the AI itself."
+          />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="rounded-xl border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-navy mb-3">
+                LLM Parsing + Evaluation Framework
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Built AI data-entry parsing for a consumer subscription
+                product, with a custom evaluation battery that tests output
+                quality against real-world cases before anything reaches a
+                customer.
+              </p>
+            </div>
+            <div className="rounded-xl border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-navy mb-3">
+                Lifecycle Automation
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Designed quiz-driven segmentation routing four customer
+                personas through tailored onboarding, nurture, and retention
+                email journeys.
+              </p>
+            </div>
+            <div className="rounded-xl border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-navy mb-3">
+                Two-Brand Subscription SaaS
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Launched and operate a two-brand subscription product end to
+                end - billing, auth, database, and support workflows.
+              </p>
+            </div>
           </div>
         </div>
       </section>

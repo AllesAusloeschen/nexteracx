@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | NextEraCX",
   },
   description:
-    "We help DTC brands transition from human-only to AI-augmented CX operations. AI-Ready CX Audits, transition implementation, and ongoing advisory.",
+    "I help DTC brands transition from human-only to AI-augmented CX operations. AI-Ready CX Audits, transition implementation, and ongoing advisory.",
   metadataBase: new URL("https://nexteracx.co"),
   openGraph: {
     type: "website",
@@ -28,13 +28,13 @@ export const metadata: Metadata = {
     siteName: "NextEraCX",
     title: "NextEraCX | AI-Ready CX for DTC Brands",
     description:
-      "We help DTC brands transition from human-only to AI-augmented CX operations. AI-Ready CX Audits, transition implementation, and ongoing advisory.",
+      "I help DTC brands transition from human-only to AI-augmented CX operations. AI-Ready CX Audits, transition implementation, and ongoing advisory.",
   },
   twitter: {
     card: "summary_large_image",
     title: "NextEraCX | AI-Ready CX for DTC Brands",
     description:
-      "We help DTC brands transition from human-only to AI-augmented CX operations. AI-Ready CX Audits, transition implementation, and ongoing advisory.",
+      "I help DTC brands transition from human-only to AI-augmented CX operations. AI-Ready CX Audits, transition implementation, and ongoing advisory.",
   },
   robots: {
     index: true,

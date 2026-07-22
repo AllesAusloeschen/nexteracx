@@ -34,7 +34,7 @@ const services = [
     id: "implementation",
     title: "AI Transition Implementation",
     description:
-      "Once you know what is ready, we build it. Hands-on work inside your Gorgias instance - restructuring your knowledge base so AI agents can actually use it, designing automation rules that route correctly, and building the handoff logic that determines when a conversation gets escalated to a human. The goal is not to replace your team. It is to let them focus on the conversations that actually need a person.",
+      "Once you know what is ready, I build it. Hands-on work inside your Gorgias instance - restructuring your knowledge base so AI agents can actually use it, designing automation rules that route correctly, and building the handoff logic that determines when a conversation gets escalated to a human. The goal is not to replace your team. It is to let them focus on the conversations that actually need a person.",
     deliverables: [
       "Knowledge base restructuring and content rewriting for AI agent consumption",
       "Gorgias Automate configuration and rule design",
@@ -48,7 +48,7 @@ const services = [
     id: "advisory",
     title: "Ongoing Advisory & Optimization",
     description:
-      "AI agent performance is not set-and-forget. Ticket patterns shift, products change, customers ask new questions. We stay embedded on a monthly retainer to tune automation rules, expand AI coverage into new ticket categories, retrain on knowledge base updates, and make sure the handoff between AI and human agents stays clean.",
+      "AI agent performance is not set-and-forget. Ticket patterns shift, products change, customers ask new questions. I stay embedded on a monthly retainer to tune automation rules, expand AI coverage into new ticket categories, retrain on knowledge base updates, and make sure the handoff between AI and human agents stays clean.",
     deliverables: [
       "Monthly AI agent performance review - resolution rate, escalation rate, CSAT impact",
       "Knowledge base maintenance and expansion",
@@ -63,7 +63,7 @@ const services = [
 const faqs = [
   {
     q: "Do we need to be on Gorgias?",
-    a: "We are deepest on Gorgias, which is where most Shopify-native DTC brands live. We also work with Zendesk. If you are on something else, we can discuss whether we are the right fit on a call.",
+    a: "I am deepest on Gorgias, which is where most Shopify-native DTC brands live. I also work with Zendesk. If you are on something else, we can discuss whether I am the right fit on a call.",
   },
   {
     q: "What size companies do you work with?",
@@ -71,11 +71,11 @@ const faqs = [
   },
   {
     q: "Are you going to replace our CX team with AI?",
-    a: "No. We design the transition so your human agents handle the conversations that actually need a person - complex issues, emotional moments, high-value customers. AI handles the repetitive tier 1 volume. Your team gets better work, not no work.",
+    a: "No. I design the transition so your human agents handle the conversations that actually need a person - complex issues, emotional moments, high-value customers. AI handles the repetitive tier 1 volume. Your team gets better work, not no work.",
   },
   {
     q: "How current is your AI agent expertise?",
-    a: "We are practitioners, not theorists. The AI agent landscape - especially Gorgias Automate - has evolved significantly in 2025. We stay current because we are actively building with these tools, not just advising from the sidelines.",
+    a: "I am a practitioner, not a theorist. The AI agent landscape - especially Gorgias Automate - has evolved significantly in 2025-2026. I stay current because I am actively building with these tools, not just advising from the sidelines.",
   },
   {
     q: "What does the audit actually deliver?",
@@ -103,7 +103,7 @@ export default function ServicesPage() {
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
               Everyone can buy Gorgias Automate. The hard part is knowing what
               to automate, where to keep humans, and how to design the handoff
-              between them. That is what we do.
+              between them. That is what I do.
             </p>
           </div>
         </div>

@@ -22,6 +22,7 @@ export default function Footer() {
               <li><Link href="/" className="hover:text-teal transition-colors">Home</Link></li>
               <li><Link href="/services" className="hover:text-teal transition-colors">Services</Link></li>
               <li><Link href="/about" className="hover:text-teal transition-colors">About</Link></li>
+              <li><Link href="/writing" className="hover:text-teal transition-colors">Writing</Link></li>
               <li><Link href="/contact" className="hover:text-teal transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -34,6 +35,16 @@ export default function Footer() {
                 <Link href="/contact" className="hover:text-teal transition-colors">
                   Get Your AI-Ready Audit
                 </Link>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/mathiasdorr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-teal transition-colors"
+                >
+                  LinkedIn
+                </a>
               </li>
             </ul>
           </div>
