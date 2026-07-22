@@ -75,6 +75,18 @@ export default function AboutPage() {
               {principal.bio.map((paragraph, j) => (
                 <p key={j}>{paragraph}</p>
               ))}
+              <div className="pt-2">
+                <h3 className="text-base font-semibold text-navy mb-2">
+                  Off the clock
+                </h3>
+                <p>
+                  Recharging looks like: travel (mostly Europe and the
+                  Caribbean, and also Costa Rica has my heart), chess,
+                  pickleball and tennis, lifting heavy things on a schedule,
+                  and an ongoing search for the perfect potato (French
+                  Bulldog).
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -154,21 +166,6 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Off the clock */}
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8 py-20 md:py-24 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-navy mb-6">
-            Off the clock
-          </h2>
-          <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
-            Recharging looks like: travel (mostly Europe and the Caribbean,
-            and also Costa Rica has my heart), chess, pickleball and tennis,
-            lifting heavy things on a schedule, and an ongoing search for the
-            perfect potato (French Bulldog).
-          </p>
         </div>
       </section>
 
