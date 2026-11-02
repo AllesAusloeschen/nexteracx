@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import ClosingCTA from "../components/ClosingCTA";
 import SectionHeading from "../components/SectionHeading";
-import CTAButton from "../components/CTAButton";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Mathias Dorr, Principal at NextEraCX. 10+ years in CX and ecommerce operations, including five years running CX at Every Man Jack. Gorgias Certified Admin, MBA.",
+    "Mathias Dorr, Principal at NextEraCX. 10+ years running support operations for DTC, CPG, and B2B SaaS. Independent, hands-on with AI, and focused on proving the answers are right.",
   openGraph: {
     title: "About | NextEraCX",
     description:
-      "I built CX the old way. Now I help brands cross to what is next.",
+      "I built CX the old way. Now I make AI earn its place.",
     url: "https://nexteracx.co/about",
   },
 };
@@ -20,11 +20,9 @@ const principal = {
   title: "Principal",
   photo: "/mathias-headshot.png",
   bio: [
-    <>I&apos;ve spent 10+ years in CX and ecommerce operations, and I&apos;ve built CX functions from the ground up. I know what breaks at scale and what holds.</>,
-    <>At Every Man Jack, a national DTC grooming brand, I ran CX operations for five years through 40% year-over-year growth. I took CSAT from 75% to the 99th percentile of Gorgias&apos;s benchmark in six months, cut full resolution time from 40+ hours to under 10, and reduced ticket volume 40% through automation and AI. I led an in-house team alongside a six-agent outsourced team, owned subscription retention flows and marketplace support across Amazon, Walmart, Target, and TikTok Shop, and presented CX reporting to the executive team every month.</>,
-    <>Some of the work I&apos;m proudest of happened outside the inbox: a direct reporting line from support to our quality control team, weekly sessions with marketing to catch issues before promotions launched, and a trip to our 3PL to retrain how they packed our products based on what customers were telling us.</>,
-    <>Before that, I spent four years at B-Stock supporting buyers and sellers on a B2B marketplace serving Fortune 500 retailers.</>,
-    <>Today I build with AI hands-on: production LLM systems with evaluation frameworks that measure quality before customers ever see an answer.</>,
+    <>I&apos;ve spent more than 10 years running support operations for DTC and CPG brands and B2B SaaS: help desks, knowledge bases, QA programs, outsourced teams, subscription flows, and the reporting leadership relies on. I&apos;ve built CX functions from the ground up. I know what breaks at scale and what holds.</>,
+    <>Today I build with AI hands-on, and I hold it to a simple rule: nothing reaches a customer until it passes a test of the hard cases. That rule came from watching AI dashboards celebrate numbers that hid wrong answers.</>,
+    <>NextEraCX is the practice built on that idea. I&apos;m independent, so my only job is making the tools you already pay for work, and proving it.</>,
   ],
   credentials: [
     "MBA, Healthcare Administration, Gonzaga University",
@@ -45,15 +43,9 @@ export default function AboutPage() {
             <p className="text-teal text-sm font-semibold uppercase tracking-wider mb-4">
               About
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6">
-              I built CX the old way. Now I help brands cross to what&apos;s next.
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+              I built CX the old way. Now I make AI earn its place.
             </h1>
-            <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
-              10+ years building support operations from scratch - SOPs, QA
-              frameworks, knowledge bases, Gorgias configurations, seasonal
-              teams. That foundation is exactly what AI agents need to work.
-              I am the bridge.
-            </p>
           </div>
         </div>
       </section>
@@ -114,32 +106,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* The Story */}
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8 py-20 md:py-24 text-center">
-          <SectionHeading
-            label="The Story"
-            title="From operator to architect."
-          />
-          <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
-            I spent years building CX operations the traditional way -
-            knowledge base architecture, escalation logic, QA frameworks, the
-            unglamorous systems that make support work at scale. When AI
-            agents started to mature, I realized that work was exactly the
-            foundation they need: an AI agent is only as good as the knowledge
-            it reads and the rules it follows. NextEraCX is that realization
-            turned into a practice. I help brands build the foundation and
-            make the transition without breaking what is already working.
-          </p>
-        </div>
-      </section>
-
       {/* Philosophy */}
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
           <SectionHeading
             label="Approach"
-            title="How I think about the transition."
+            title="How I work."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center p-6">
@@ -152,9 +124,8 @@ export default function AboutPage() {
                 Foundations first
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                AI agents are only as good as the knowledge base they read, the
-                rules they follow, and the escalation logic they trigger. I
-                build that foundation before anything gets turned on.
+                AI only amplifies what&apos;s underneath it. Clean knowledge and
+                clear rules come before automation.
               </p>
             </div>
             <div className="text-center p-6">
@@ -167,9 +138,8 @@ export default function AboutPage() {
                 Design the handoff
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                The moment a conversation shifts from AI to human is where most
-                implementations break. I design that handoff with specific
-                triggers, sentiment awareness, and clear routing.
+                The moment AI steps aside is where customers decide whether to
+                trust you.
               </p>
             </div>
             <div className="text-center p-6">
@@ -179,12 +149,11 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-navy mb-2">
-                Measure what matters
+                Test, don&apos;t trust
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                AI agent accuracy, escalation rates, CSAT during transition,
-                resolution quality. I build the QA frameworks that tell you
-                whether the transition is working.
+                Measure whether answers were right, not just whether they were
+                sent.
               </p>
             </div>
             <div className="text-center p-6">
@@ -194,30 +163,19 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-navy mb-2">
-                Close the loop
+                Get ahead of the customer
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Support sees problems first. Route what customers tell you to
-                the teams that can fix it, with owners and follow-up.
+                The best experience is the one where they never have to ask.
+                What customers tell support should reach the teams that can fix
+                it, so the same question doesn&apos;t come twice.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-navy text-white">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Ready to see what the transition looks like for your brand?
-          </h2>
-          <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
-            Start with the AI-Ready CX Audit. Two weeks, fixed fee, clear
-            deliverables.
-          </p>
-          <CTAButton href="/contact">Get Your AI-Ready Audit</CTAButton>
-        </div>
-      </section>
+      <ClosingCTA />
     </>
   );
 }

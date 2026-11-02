@@ -7,7 +7,6 @@ import { useState } from "react";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
-  { href: "/work", label: "Work" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -44,7 +43,7 @@ export default function Header() {
               href="/contact"
               className="inline-flex items-center justify-center rounded-md bg-teal px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-teal-dark"
             >
-              Get Your AI-Ready Audit
+              Book a 30-minute call
             </Link>
           </div>
 
@@ -89,7 +88,7 @@ export default function Header() {
               className="block w-full text-center rounded-md bg-teal px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-teal-dark"
               onClick={() => setMobileOpen(false)}
             >
-              Get Your AI-Ready Audit
+              Book a 30-minute call
             </Link>
           </div>
         )}

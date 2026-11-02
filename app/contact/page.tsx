@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import ContactForm from "../components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Get Started",
+  title: "Contact",
   description:
-    "Book an AI-Ready CX Audit scoping call or send me a message. Find out if your CX operation is ready for AI agents.",
+    "Book a 30-minute call to talk through your support setup, or request a free AI spot check to see how many answers your AI actually gets right.",
   openGraph: {
-    title: "Get Started | NextEraCX",
+    title: "Contact | NextEraCX",
     description:
-      "Start with the AI-Ready CX Audit. 2 weeks, fixed fee, clear deliverables.",
+      "Let's look under the hood. Book a 30-minute call or request a free AI spot check.",
     url: "https://nexteracx.co/contact",
   },
 };
@@ -21,16 +21,14 @@ export default function ContactPage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-28">
           <div className="max-w-3xl">
             <p className="text-teal text-sm font-semibold uppercase tracking-wider mb-4">
-              Get Started
+              Contact
             </p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6">
-              Start with the AI-Ready CX Audit.
+              Let&apos;s look under the hood.
             </h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
-              Book a call to scope the audit for your brand, or send me a
-              message with details about your current setup. No pitch - just an
-              honest conversation about whether your CX operation is ready for
-              AI agents.
+              Book a 30-minute call to talk through your setup, or request a
+              free AI spot check below.
             </p>
             <p className="mt-4 text-gray-400">
               Prefer email? Write to{" "}
@@ -53,12 +51,11 @@ export default function ContactPage() {
             {/* Calendly Embed */}
             <div>
               <h2 className="text-2xl font-bold text-navy mb-2">
-                Book an Audit Scoping Call
+                Book a 30-minute call
               </h2>
               <p className="text-gray-600 mb-6">
-                Pick a time that works. We will walk through your current CX
-                setup, ticket volume, and tech stack together to scope the
-                audit. 30 minutes, free.
+                Pick a time that works. We&apos;ll walk through your help desk,
+                your AI setup, and your top contact reasons. Free.
               </p>
 
               <iframe
@@ -73,6 +70,20 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div>
+              <div
+                id="spot-check"
+                className="scroll-mt-24 mb-10 rounded-xl bg-teal/10 border border-teal/20 p-6"
+              >
+                <h2 className="text-2xl font-bold text-navy mb-2">
+                  Request a free AI spot check
+                </h2>
+                <p className="text-gray-600">
+                  Use the form below and mention &ldquo;spot check.&rdquo;
+                  I&apos;ll reply within one business day with simple
+                  instructions for sharing 50 recent AI-handled conversations.
+                </p>
+              </div>
+
               <h2 className="text-2xl font-bold text-navy mb-2">
                 Send a Message
               </h2>
@@ -102,10 +113,10 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-sm font-semibold uppercase tracking-wider text-navy mb-2">
-                    Audit Timeline
+                    Spot Check
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    2 weeks from kickoff to AI Readiness Report.
+                    Report within a week of receiving your conversations.
                   </p>
                 </div>
               </div>

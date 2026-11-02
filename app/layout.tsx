@@ -15,26 +15,26 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "NextEraCX | CX Operations for DTC and Subscription Brands",
+    default: "NextEraCX | Prevent Contacts, Automate Support, Prove the AI Is Right",
     template: "%s | NextEraCX",
   },
   description:
-    "NextEraCX audits, builds, and runs the systems behind great support: helpdesk and AI automation, quality programs, subscription retention, and reporting. Senior, hands-on, and independent.",
+    "NextEraCX helps DTC, CPG, and subscription brands prevent the contacts that shouldn't happen, let AI answer up to 80% of the rest with every answer checked, and make each customer feel known. On the tools you already have.",
   metadataBase: new URL("https://nexteracx.co"),
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://nexteracx.co",
     siteName: "NextEraCX",
-    title: "NextEraCX | CX Operations for DTC and Subscription Brands",
+    title: "NextEraCX | Prevent Contacts, Automate Support, Prove the AI Is Right",
     description:
-      "NextEraCX audits, builds, and runs the systems behind great support: helpdesk and AI automation, quality programs, subscription retention, and reporting. Senior, hands-on, and independent.",
+      "NextEraCX helps DTC, CPG, and subscription brands prevent the contacts that shouldn't happen, let AI answer up to 80% of the rest with every answer checked, and make each customer feel known. On the tools you already have.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "NextEraCX | CX Operations for DTC and Subscription Brands",
+    title: "NextEraCX | Prevent Contacts, Automate Support, Prove the AI Is Right",
     description:
-      "NextEraCX audits, builds, and runs the systems behind great support: helpdesk and AI automation, quality programs, subscription retention, and reporting. Senior, hands-on, and independent.",
+      "NextEraCX helps DTC, CPG, and subscription brands prevent the contacts that shouldn't happen, let AI answer up to 80% of the rest with every answer checked, and make each customer feel known. On the tools you already have.",
   },
   robots: {
     index: true,

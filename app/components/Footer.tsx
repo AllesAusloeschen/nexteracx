@@ -11,8 +11,9 @@ export default function Footer() {
               NextEra<span className="text-teal">CX</span>
             </Link>
             <p className="mt-3 text-sm text-gray-400 max-w-xs">
-              CX operations for DTC and subscription brands. Independent,
-              hands-on, AI where it earns its place.
+              Prevent the contacts that shouldn&apos;t happen. Let AI answer up
+              to 80% of the rest, every answer checked. Make every customer
+              feel known.
             </p>
           </div>
 
@@ -22,7 +23,6 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li><Link href="/" className="hover:text-teal transition-colors">Home</Link></li>
               <li><Link href="/services" className="hover:text-teal transition-colors">Services</Link></li>
-              <li><Link href="/work" className="hover:text-teal transition-colors">Work</Link></li>
               <li><Link href="/about" className="hover:text-teal transition-colors">About</Link></li>
               <li><Link href="/contact" className="hover:text-teal transition-colors">Contact</Link></li>
             </ul>
@@ -34,7 +34,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
                 <Link href="/contact" className="hover:text-teal transition-colors">
-                  Get Your AI-Ready Audit
+                  Book a 30-minute call
                 </Link>
               </li>
               <li>
