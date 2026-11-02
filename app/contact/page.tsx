@@ -32,6 +32,16 @@ export default function ContactPage() {
               honest conversation about whether your CX operation is ready for
               AI agents.
             </p>
+            <p className="mt-4 text-gray-400">
+              Prefer email? Write to{" "}
+              <a
+                href="mailto:mathias@nexteracx.co"
+                className="text-teal hover:text-white transition-colors"
+              >
+                mathias@nexteracx.co
+              </a>
+              .
+            </p>
           </div>
         </div>
       </section>

@@ -15,26 +15,26 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "NextEraCX | AI-Ready CX for DTC Brands",
+    default: "NextEraCX | CX Operations for DTC and Subscription Brands",
     template: "%s | NextEraCX",
   },
   description:
-    "I help DTC brands transition from human-only to AI-augmented CX operations. AI-Ready CX Audits, transition implementation, and ongoing advisory.",
+    "NextEraCX audits, builds, and runs the systems behind great support: helpdesk and AI automation, quality programs, subscription retention, and reporting. Senior, hands-on, and independent.",
   metadataBase: new URL("https://nexteracx.co"),
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://nexteracx.co",
     siteName: "NextEraCX",
-    title: "NextEraCX | AI-Ready CX for DTC Brands",
+    title: "NextEraCX | CX Operations for DTC and Subscription Brands",
     description:
-      "I help DTC brands transition from human-only to AI-augmented CX operations. AI-Ready CX Audits, transition implementation, and ongoing advisory.",
+      "NextEraCX audits, builds, and runs the systems behind great support: helpdesk and AI automation, quality programs, subscription retention, and reporting. Senior, hands-on, and independent.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "NextEraCX | AI-Ready CX for DTC Brands",
+    title: "NextEraCX | CX Operations for DTC and Subscription Brands",
     description:
-      "I help DTC brands transition from human-only to AI-augmented CX operations. AI-Ready CX Audits, transition implementation, and ongoing advisory.",
+      "NextEraCX audits, builds, and runs the systems behind great support: helpdesk and AI automation, quality programs, subscription retention, and reporting. Senior, hands-on, and independent.",
   },
   robots: {
     index: true,

@@ -6,7 +6,7 @@ import CTAButton from "../components/CTAButton";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Mathias Dorr, Principal - 10+ years across CX and ecommerce operations. Helping DTC brands transition to AI-augmented support.",
+    "Mathias Dorr, Principal at NextEraCX. 10+ years in CX and ecommerce operations, including five years running CX at Every Man Jack. Gorgias Certified Admin, MBA.",
   openGraph: {
     title: "About | NextEraCX",
     description:
@@ -20,9 +20,18 @@ const principal = {
   title: "Principal",
   photo: "/mathias-headshot.png",
   bio: [
-    <>10+ years across CX and ecommerce operations, from DTC brands to enterprise marketplaces. Led the work that sounds boring but makes everything else possible - knowledge base architecture, automation rule design, QA scoring systems, escalation path logic. Drove a 40% reduction in ticket volume through automation while maintaining 99th percentile CSAT.</>,
-    <>That operational foundation - the SOPs, the knowledge structures, the escalation logic - turns out to be exactly what AI agents need to perform. An AI agent reading a well-structured knowledge base with clear escalation rules is a different animal than one reading a mess. That realization is what led to NextEraCX. These days that work is hands-on with the AI itself: shipping production LLM-powered systems, including a custom evaluation framework that measures output quality before customers ever see it.</>,
-    <>Now focused on helping DTC brands make the transition from human-only to AI-augmented CX without losing the customer relationships they have spent years building.</>,
+    <>I&apos;ve spent 10+ years in CX and ecommerce operations, and I&apos;ve built CX functions from the ground up. I know what breaks at scale and what holds.</>,
+    <>At Every Man Jack, a national DTC grooming brand, I ran CX operations for five years through 40% year-over-year growth. I took CSAT from 75% to the 99th percentile of Gorgias&apos;s benchmark in six months, cut full resolution time from 40+ hours to under 10, and reduced ticket volume 40% through automation and AI. I led an in-house team alongside a six-agent outsourced team, owned subscription retention flows and marketplace support across Amazon, Walmart, Target, and TikTok Shop, and presented CX reporting to the executive team every month.</>,
+    <>Some of the work I&apos;m proudest of happened outside the inbox: a direct reporting line from support to our quality control team, weekly sessions with marketing to catch issues before promotions launched, and a trip to our 3PL to retrain how they packed our products based on what customers were telling us.</>,
+    <>Before that, I spent four years at B-Stock supporting buyers and sellers on a B2B marketplace serving Fortune 500 retailers.</>,
+    <>Today I build with AI hands-on: production LLM systems with evaluation frameworks that measure quality before customers ever see an answer.</>,
+  ],
+  credentials: [
+    "MBA, Healthcare Administration, Gonzaga University",
+    "B.A., Business Management, magna cum laude, Lewis-Clark State College",
+    "Gorgias Certified Admin",
+    "Zendesk Customer Service Professional",
+    "Google Analytics Certification",
   ],
 };
 
@@ -77,6 +86,19 @@ export default function AboutPage() {
               ))}
               <div className="pt-2">
                 <h3 className="text-base font-semibold text-navy mb-2">
+                  Credentials
+                </h3>
+                <ul className="space-y-2">
+                  {principal.credentials.map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="text-teal mt-0.5 flex-shrink-0">✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="pt-2">
+                <h3 className="text-base font-semibold text-navy mb-2">
                   Off the clock
                 </h3>
                 <p>
@@ -119,7 +141,7 @@ export default function AboutPage() {
             label="Approach"
             title="How I think about the transition."
           />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center p-6">
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-teal/10 text-teal mx-auto mb-4">
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -163,6 +185,20 @@ export default function AboutPage() {
                 AI agent accuracy, escalation rates, CSAT during transition,
                 resolution quality. I build the QA frameworks that tell you
                 whether the transition is working.
+              </p>
+            </div>
+            <div className="text-center p-6">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-teal/10 text-teal mx-auto mb-4">
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-navy mb-2">
+                Close the loop
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Support sees problems first. Route what customers tell you to
+                the teams that can fix it, with owners and follow-up.
               </p>
             </div>
           </div>

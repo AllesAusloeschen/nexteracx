@@ -11,7 +11,8 @@ export default function Footer() {
               NextEra<span className="text-teal">CX</span>
             </Link>
             <p className="mt-3 text-sm text-gray-400 max-w-xs">
-              Helping DTC brands transition from human-only to AI-augmented CX.
+              CX operations for DTC and subscription brands. Independent,
+              hands-on, AI where it earns its place.
             </p>
           </div>
 
@@ -21,6 +22,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li><Link href="/" className="hover:text-teal transition-colors">Home</Link></li>
               <li><Link href="/services" className="hover:text-teal transition-colors">Services</Link></li>
+              <li><Link href="/work" className="hover:text-teal transition-colors">Work</Link></li>
               <li><Link href="/about" className="hover:text-teal transition-colors">About</Link></li>
               <li><Link href="/writing" className="hover:text-teal transition-colors">Writing</Link></li>
               <li><Link href="/contact" className="hover:text-teal transition-colors">Contact</Link></li>

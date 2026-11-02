@@ -1,8 +1,93 @@
 import Image from "next/image";
+import Link from "next/link";
 import CTAButton from "./components/CTAButton";
 import SectionHeading from "./components/SectionHeading";
 import ServiceCard from "./components/ServiceCard";
 import StatCard from "./components/StatCard";
+
+const stats = [
+  { value: "75% to 99th percentile", label: "CSAT in six months (Gorgias benchmark)" },
+  { value: "40+ hrs to under 10", label: "Full resolution time" },
+  { value: "40%", label: "Ticket volume reduced through automation" },
+  { value: "10+ years", label: "CX and ecommerce operations" },
+];
+
+const coverage = [
+  {
+    title: "Helpdesk & AI Automation",
+    description:
+      "Gorgias and Zendesk configuration, AI agents, routing, macros, and the handoff from AI to a human.",
+  },
+  {
+    title: "Quality & Knowledge",
+    description:
+      "QA scorecards, help center and SOPs written so both agents and AI read them correctly.",
+  },
+  {
+    title: "Subscription & Retention",
+    description:
+      "Cancel, pause, and save flows that keep customers without trapping them.",
+  },
+  {
+    title: "Marketplace & Omnichannel",
+    description:
+      "Consistent support across your site, Amazon, Walmart, Target, and TikTok Shop.",
+  },
+  {
+    title: "Voice of Customer",
+    description:
+      "Contact drivers turned into fixes, with owners in product, marketing, and fulfillment.",
+  },
+  {
+    title: "Revenue Protection",
+    description:
+      "Chargeback and fraud review processes, returns, and replacement policies.",
+  },
+  {
+    title: "Reporting & Cost",
+    description:
+      "Cost per ticket, staffing models, and executive reporting that drives decisions.",
+  },
+  {
+    title: "Vendor & Outsourcing Oversight",
+    description:
+      "SLAs, QA standards, and performance management for the partners you already use.",
+  },
+];
+
+const selectedWork = [
+  {
+    href: "/work#every-man-jack",
+    title: "Every Man Jack",
+    meta: "In-house, 2020 to 2025",
+    description:
+      "CSAT from 75% to the 99th percentile in six months, resolution time from 40+ hours to under 10, through 40% year-over-year growth.",
+  },
+  {
+    href: "/work#llm-evaluation",
+    title: "LLM Parsing + Evaluation Framework",
+    description:
+      "AI features that ship only after passing a test suite of hard cases written in advance.",
+  },
+  {
+    href: "/work#referral-pipeline",
+    title: "AI-Assisted Referral Partner Pipeline",
+    description:
+      "Research, personalized outreach, a three-touch cadence, and a shared leadership tracker for a multi-state nutrition practice.",
+  },
+  {
+    href: "/work#subscription-saas",
+    title: "Two-Brand Subscription SaaS",
+    description:
+      "Launched and operated end to end, from Stripe billing to customer support workflows.",
+  },
+];
+
+const audience = [
+  "DTC and subscription brands doing roughly $5M to $100M",
+  "Health, wellness, supplement, and other regulated consumer products",
+  "Teams on Gorgias or Zendesk, in-house, outsourced, or both",
+];
 
 export default function HomePage() {
   return (
@@ -12,23 +97,22 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-24 md:py-32">
           <div className="max-w-3xl">
             <p className="text-teal text-sm font-semibold uppercase tracking-wider mb-4">
-              AI-Ready CX Operations
+              CX operations for DTC and subscription brands
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
-              AI-enabled CX operations.{" "}
-              <span className="text-teal">Built, shipped, and measured.</span>
+              Customer experience operations{" "}
+              <span className="text-teal">that hold up at scale.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-400 leading-relaxed mb-8 max-w-2xl">
-              Your competitors&apos; customers aren&apos;t waiting on hold - AI
-              agents are already handling tier 1 support at the brands you
-              compete with. I help DTC brands move from human-only to
-              AI-augmented support without losing the customer relationships
-              they have built.
+              NextEraCX audits, builds, and runs the systems behind great
+              support: helpdesk and AI automation, quality programs,
+              subscription retention, and the reporting leadership actually
+              uses. Senior, hands-on, and independent.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <CTAButton href="/contact">Get Your AI-Ready Audit</CTAButton>
               <CTAButton href="/services" variant="outline">
-                See How It Works
+                See Services
               </CTAButton>
             </div>
           </div>
@@ -38,11 +122,58 @@ export default function HomePage() {
       {/* Results / Stats */}
       <section className="border-b border-gray-200">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-16">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-            <StatCard value="40%" label="Ticket volume reduced through automation" />
-            <StatCard value="99th" label="Percentile CSAT - during the transition" />
-            <StatCard value="10+" label="Years in CX ops" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {stats.map((stat) => (
+              <StatCard key={stat.label} value={stat.value} label={stat.label} />
+            ))}
           </div>
+          <p className="mt-6 text-center text-xs text-gray-600">
+            Results from in-house CX leadership at Every Man Jack, a national
+            DTC grooming brand.
+          </p>
+        </div>
+      </section>
+
+      {/* What we cover */}
+      <section className="bg-gray-50">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
+          <SectionHeading
+            label="What we cover"
+            title="The whole CX operation, not just the bot."
+            description="AI is one layer. The results come from the operation underneath it."
+          />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {coverage.map((area) => (
+              <div
+                key={area.title}
+                className="rounded-xl border border-gray-200 bg-white p-6"
+              >
+                <h3 className="text-base font-semibold text-navy mb-2">
+                  {area.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {area.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Independent by design */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 py-20 md:py-24 text-center">
+          <SectionHeading
+            label="Independent by design"
+            title="No staffing contract. No software resale."
+          />
+          <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
+            NextEraCX doesn&apos;t sell agents, seats, or software. Every
+            recommendation is about what your operation needs, not what fills a
+            contract. If you already work with an outsourcing partner, I hold
+            them to clear SLAs and QA standards. If you&apos;re deciding
+            whether to outsource at all, you get the honest math.
+          </p>
         </div>
       </section>
 
@@ -78,6 +209,11 @@ export default function HomePage() {
                   that wrong, and your automation becomes a customer churn
                   machine. Get it right, and your team handles the moments that
                   matter while AI handles the rest.
+                </p>
+                <p>
+                  I&apos;ve built CX functions from the ground up. I know what
+                  breaks at scale and what holds, and that pattern recognition
+                  is what I bring to every engagement.
                 </p>
               </div>
             </div>
@@ -118,7 +254,7 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17l-5.1-5.1m0 0L11.42 4.97m-5.1 5.1H21M3 3v18" />
                 </svg>
               }
-              title="AI Transition Implementation"
+              title="Implementation & Build-Out"
               description="Hands-on buildout: knowledge base restructuring, automation rule design, handoff logic between AI and human agents, QA frameworks. Gorgias-native."
             />
             <ServiceCard
@@ -134,46 +270,54 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Recent Work */}
+      {/* Selected work */}
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
-          <SectionHeading
-            label="Recent Work"
-            title="Not just advising - building."
-            description="Production systems shipped and running today, hands-on with the AI itself."
-          />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="rounded-xl border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-navy mb-3">
-                LLM Parsing + Evaluation Framework
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Built AI data-entry parsing for a consumer subscription
-                product, with a custom evaluation battery that tests output
-                quality against real-world cases before anything reaches a
-                customer.
-              </p>
-            </div>
-            <div className="rounded-xl border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-navy mb-3">
-                Lifecycle Automation
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Designed quiz-driven segmentation routing four customer
-                personas through tailored onboarding, nurture, and retention
-                email journeys.
-              </p>
-            </div>
-            <div className="rounded-xl border border-gray-200 p-6">
-              <h3 className="text-lg font-semibold text-navy mb-3">
-                Two-Brand Subscription SaaS
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Launched and operate a two-brand subscription product end to
-                end - billing, auth, database, and support workflows.
-              </p>
-            </div>
+          <SectionHeading label="Selected work" title="Not just advising. Building." />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {selectedWork.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group rounded-xl border border-gray-200 p-6 transition-all hover:border-teal/30 hover:shadow-lg"
+              >
+                <h3 className="text-lg font-semibold text-navy group-hover:text-teal transition-colors">
+                  {item.title}
+                </h3>
+                {item.meta && (
+                  <p className="text-xs font-semibold uppercase tracking-wider text-teal mt-1">
+                    {item.meta}
+                  </p>
+                )}
+                <p className="text-gray-600 text-sm leading-relaxed mt-3">
+                  {item.description}
+                </p>
+              </Link>
+            ))}
           </div>
+          <div className="mt-10 text-center">
+            <CTAButton href="/work" variant="outline">
+              See all work
+            </CTAButton>
+          </div>
+        </div>
+      </section>
+
+      {/* Who it's for */}
+      <section className="bg-gray-50">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 py-20 md:py-24">
+          <SectionHeading title="Who it's for." />
+          <ul className="space-y-4 max-w-2xl mx-auto">
+            {audience.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-3 text-gray-600 text-lg leading-relaxed"
+              >
+                <span className="text-teal mt-0.5 flex-shrink-0">✓</span>
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

@@ -5,11 +5,11 @@ import CTAButton from "../components/CTAButton";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "AI-Ready CX Audit, AI Transition Implementation, and Ongoing Advisory for DTC brands moving from human-only to AI-augmented support operations.",
+    "AI-Ready CX Audit, Implementation & Build-Out, Fractional Head of CX, and Ongoing AI Advisory for DTC and subscription brands. Fixed-fee audit first, independent and hands-on.",
   openGraph: {
     title: "Services | NextEraCX",
     description:
-      "AI tools are commodities. The strategy is the value. CX transition services for DTC brands.",
+      "AI tools are commodities. The strategy is the value. CX operations services for DTC and subscription brands, starting with a fixed-fee audit.",
     url: "https://nexteracx.co/services",
   },
 };
@@ -21,28 +21,52 @@ const services = [
     description:
       "Before you deploy AI agents, you need to know what they are walking into. Most DTC brands have knowledge bases full of outdated articles, automation rules built on top of each other, and escalation paths that exist in someone's head. This audit surfaces all of it and tells you exactly what needs to change before AI can take over tier 1.",
     deliverables: [
-      "Knowledge base audit - coverage gaps, outdated content, structure for AI agent consumption",
-      "Automation rule review - what is working, what is conflicting, what is missing",
-      "Ticket pattern analysis - which categories are automatable, which need humans, and why",
-      "Escalation path mapping - current state vs. what AI handoff logic requires",
+      "Ticket and contact-driver analysis: what customers contact you about, and why",
+      "Knowledge base audit: gaps, outdated content, structure for AI",
+      "Automation and AI agent review: what works, what conflicts, what's missing",
+      "Escalation and handoff mapping",
+      "Subscription, returns, and marketplace workflow review",
+      "Cost per ticket and staffing coverage",
+      "Quality program and Voice of Customer review",
+      "Gorgias or Zendesk configuration review",
       "AI readiness scorecard with prioritized recommendations",
-      "Gorgias/Zendesk configuration review",
     ],
-    pricing: "Fixed fee: $2-3K | Timeline: 2 weeks | Deliverable: AI Readiness Report with prioritized roadmap",
+    pricing: "Fixed fee: $2,000 to $3,000 | Timeline: 2 weeks | Deliverable: CX Operations & AI Readiness Report with a prioritized 30/60/90 roadmap",
   },
   {
     id: "implementation",
-    title: "AI Transition Implementation",
+    title: "Implementation & Build-Out",
+    headline: "Once you know what's ready, I build it.",
     description:
-      "Once you know what is ready, I build it. Hands-on work inside your Gorgias instance - restructuring your knowledge base so AI agents can actually use it, designing automation rules that route correctly, and building the handoff logic that determines when a conversation gets escalated to a human. The goal is not to replace your team. It is to let them focus on the conversations that actually need a person.",
+      "Hands-on work inside your stack. The goal is an operation your team runs confidently without me.",
     deliverables: [
-      "Knowledge base restructuring and content rewriting for AI agent consumption",
-      "Gorgias Automate configuration and rule design",
-      "Handoff logic - triggers, sentiment thresholds, and escalation criteria",
-      "Macro and template updates for human agents handling escalated conversations",
-      "QA framework for monitoring AI agent accuracy and tone",
+      "Knowledge base restructuring and rewriting for agents and AI",
+      "Gorgias Automate or Zendesk AI agent configuration and rule design",
+      "Handoff logic: triggers, sentiment thresholds, escalation criteria",
+      "Macro library and escalation playbooks",
+      "QA scorecards and a framework for monitoring AI accuracy and tone",
+      "Subscription cancel, pause, and save flows",
+      "Chargeback, fraud review, and returns processes",
+      "SOPs and training materials for in-house and outsourced agents",
       "Integration testing and soft launch support",
     ],
+    pricing: "From $3,000 per project",
+  },
+  {
+    id: "fractional",
+    title: "Fractional Head of CX",
+    headline: "Senior CX leadership, without the full-time hire.",
+    description:
+      "For brands that need someone to own CX week to week but aren't ready for a full-time director.",
+    deliverables: [
+      "Weekly operations leadership with your in-house team and outsourcing partners",
+      "Vendor management: SLAs, QA standards, staffing and capacity planning",
+      "A monthly Voice of Customer review with accountable owners across teams",
+      "Executive reporting: contact trends, cost per ticket, and investment recommendations",
+      "Peak season and promotion readiness with marketing",
+      "Fulfillment and 3PL partnership to cut delivery-related contacts",
+    ],
+    pricing: "From $3,000 per month",
   },
   {
     id: "advisory",
@@ -57,7 +81,14 @@ const services = [
       "Team alignment - keeping human agents informed and effective as AI coverage expands",
       "Quarterly strategy review and roadmap update",
     ],
+    pricing: "From $1,500 per month",
   },
+];
+
+const notIncluded = [
+  "Supply support agents or staffing",
+  "Resell software or take vendor commissions",
+  "Lock you into a long-term contract",
 ];
 
 const faqs = [
@@ -85,6 +116,22 @@ const faqs = [
     q: "What if we already have automation set up?",
     a: "Most brands do. And most of it was built before modern AI agents existed. The audit evaluates what you have, identifies what is helping vs. what is creating conflicts, and shows you what needs to change.",
   },
+  {
+    q: "Do you provide support agents?",
+    a: "No. NextEraCX is independent. I help you build, run, and manage your team and any outsourcing partner you choose, but I don't staff it.",
+  },
+  {
+    q: "Can you work with our outsourcing partner?",
+    a: "Yes. I've managed outsourced teams directly: setting SLAs, running QA, and handling escalations.",
+  },
+  {
+    q: "Is this only about AI?",
+    a: "No. AI is one layer. The audit covers the whole operation: quality, retention flows, marketplaces, reporting, and cost.",
+  },
+  {
+    q: "What tools do you work with?",
+    a: "Gorgias and Zendesk most deeply, plus Shopify, Recharge, Klaviyo, and marketplace channels like Amazon and TikTok Shop. Other platforms we can discuss on a call.",
+  },
 ];
 
 export default function ServicesPage() {
@@ -101,9 +148,8 @@ export default function ServicesPage() {
               AI tools are commodities. The strategy is the value.
             </h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
-              Everyone can buy Gorgias Automate. The hard part is knowing what
-              to automate, where to keep humans, and how to design the handoff
-              between them. That is what I do.
+              Every engagement starts with a fixed-fee audit. From there, I
+              build what&apos;s needed and, if you want, run it with you.
             </p>
           </div>
         </div>
@@ -118,6 +164,11 @@ export default function ServicesPage() {
                 <h2 className="text-2xl md:text-3xl font-bold text-navy mb-4">
                   {service.title}
                 </h2>
+                {service.headline && (
+                  <p className="text-lg font-semibold text-teal mb-3">
+                    {service.headline}
+                  </p>
+                )}
                 <p className="text-gray-600 leading-relaxed mb-8">
                   {service.description}
                 </p>
@@ -149,6 +200,30 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* What's not included */}
+      <section className="bg-white border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 py-20 md:py-24">
+          <SectionHeading label="Independent" title="What NextEraCX doesn't do" />
+          <div className="bg-gray-50 rounded-xl p-6 max-w-2xl mx-auto">
+            <ul className="space-y-3">
+              {notIncluded.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-start gap-3 text-gray-600"
+                >
+                  <span className="text-gray-400 mt-0.5 flex-shrink-0">✕</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <p className="mt-8 text-center text-gray-600 leading-relaxed max-w-2xl mx-auto">
+            Need agents? I&apos;ll help you choose and manage the right
+            partner. I just won&apos;t be the one selling them to you.
+          </p>
         </div>
       </section>
 
