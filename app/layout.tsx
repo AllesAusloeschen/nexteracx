@@ -15,26 +15,26 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "NextEraCX | Prevent Contacts, Automate Support, Prove the AI Is Right",
+    default: "NextEraCX | The Next Era of Customer Experience",
     template: "%s | NextEraCX",
   },
   description:
-    "NextEraCX helps DTC, CPG, and subscription brands prevent the contacts that shouldn't happen, let AI answer up to 80% of the rest with every answer checked, and make each customer feel known. On the tools you already have.",
+    "Customer experience is moving from reactive to proactive, manual to automated, generic to personal. NextEraCX helps DTC, CPG, subscription, and SaaS companies make that shift now.",
   metadataBase: new URL("https://nexteracx.co"),
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://nexteracx.co",
     siteName: "NextEraCX",
-    title: "NextEraCX | Prevent Contacts, Automate Support, Prove the AI Is Right",
+    title: "NextEraCX | The Next Era of Customer Experience",
     description:
-      "NextEraCX helps DTC, CPG, and subscription brands prevent the contacts that shouldn't happen, let AI answer up to 80% of the rest with every answer checked, and make each customer feel known. On the tools you already have.",
+      "Customer experience is moving from reactive to proactive, manual to automated, generic to personal. NextEraCX helps DTC, CPG, subscription, and SaaS companies make that shift now.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "NextEraCX | Prevent Contacts, Automate Support, Prove the AI Is Right",
+    title: "NextEraCX | The Next Era of Customer Experience",
     description:
-      "NextEraCX helps DTC, CPG, and subscription brands prevent the contacts that shouldn't happen, let AI answer up to 80% of the rest with every answer checked, and make each customer feel known. On the tools you already have.",
+      "Customer experience is moving from reactive to proactive, manual to automated, generic to personal. NextEraCX helps DTC, CPG, subscription, and SaaS companies make that shift now.",
   },
   robots: {
     index: true,

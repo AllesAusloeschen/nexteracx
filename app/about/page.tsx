@@ -6,7 +6,7 @@ import SectionHeading from "../components/SectionHeading";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Mathias Dorr, Principal at NextEraCX. 10+ years running support operations for DTC, CPG, and B2B SaaS. Independent, hands-on with AI, and focused on proving the answers are right.",
+    "Mathias Dorr, Principal at NextEraCX. 10+ years running support operations for DTC, CPG, subscription, and B2B SaaS companies. Helping companies move to proactive, automated, and personal customer experience.",
   openGraph: {
     title: "About | NextEraCX",
     description:
@@ -20,9 +20,9 @@ const principal = {
   title: "Principal",
   photo: "/mathias-headshot.png",
   bio: [
-    <>I&apos;ve spent more than 10 years running support operations for DTC and CPG brands and B2B SaaS: help desks, knowledge bases, QA programs, outsourced teams, subscription flows, and the reporting leadership relies on. I&apos;ve built CX functions from the ground up. I know what breaks at scale and what holds.</>,
+    <>I&apos;ve spent more than 10 years running support operations for DTC, CPG, and subscription brands and B2B SaaS companies: help desks, knowledge bases, QA programs, outsourced teams, subscription flows, and the reporting leadership relies on. I&apos;ve built CX functions from the ground up. I know what breaks at scale and what holds.</>,
     <>Today I build with AI hands-on, and I hold it to a simple rule: nothing reaches a customer until it passes a test of the hard cases. That rule came from watching AI dashboards celebrate numbers that hid wrong answers.</>,
-    <>NextEraCX is the practice built on that idea. I&apos;m independent, so my only job is making the tools you already pay for work, and proving it.</>,
+    <>NextEraCX is the practice built on that idea: helping companies move to the next era of customer experience, proactive, automated, and personal, without losing the human side that keeps customers loyal.</>,
   ],
   credentials: [
     "MBA, Healthcare Administration, Gonzaga University",

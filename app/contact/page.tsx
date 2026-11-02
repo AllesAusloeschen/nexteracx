@@ -4,11 +4,11 @@ import ContactForm from "../components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Book a 30-minute call to talk through your support setup, or request a free AI spot check to see how many answers your AI actually gets right.",
+    "Tell us where your customer experience is today and where you want it to go. Book a time or send a message to NextEraCX.",
   openGraph: {
     title: "Contact | NextEraCX",
     description:
-      "Let's look under the hood. Book a 30-minute call or request a free AI spot check.",
+      "Let's talk. Tell us where your customer experience is today and where you want it to go.",
     url: "https://nexteracx.co/contact",
   },
 };
@@ -24,11 +24,11 @@ export default function ContactPage() {
               Contact
             </p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6">
-              Let&apos;s look under the hood.
+              Let&apos;s talk.
             </h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
-              Book a 30-minute call to talk through your setup, or request a
-              free AI spot check below.
+              Tell us where your customer experience is today and where you
+              want it to go. Book a time below, or send a message.
             </p>
             <p className="mt-4 text-gray-400">
               Prefer email? Write to{" "}
@@ -51,11 +51,11 @@ export default function ContactPage() {
             {/* Calendly Embed */}
             <div>
               <h2 className="text-2xl font-bold text-navy mb-2">
-                Book a 30-minute call
+                Book a time
               </h2>
               <p className="text-gray-600 mb-6">
-                Pick a time that works. We&apos;ll walk through your help desk,
-                your AI setup, and your top contact reasons. Free.
+                Pick a time that works. We&apos;ll talk through your platform,
+                your team, and what customers are contacting you about.
               </p>
 
               <iframe
@@ -70,20 +70,6 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div>
-              <div
-                id="spot-check"
-                className="scroll-mt-24 mb-10 rounded-xl bg-teal/10 border border-teal/20 p-6"
-              >
-                <h2 className="text-2xl font-bold text-navy mb-2">
-                  Request a free AI spot check
-                </h2>
-                <p className="text-gray-600">
-                  Use the form below and mention &ldquo;spot check.&rdquo;
-                  I&apos;ll reply within one business day with simple
-                  instructions for sharing 50 recent AI-handled conversations.
-                </p>
-              </div>
-
               <h2 className="text-2xl font-bold text-navy mb-2">
                 Send a Message
               </h2>
@@ -94,7 +80,7 @@ export default function ContactPage() {
               <ContactForm />
 
               {/* Info */}
-              <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-sm font-semibold uppercase tracking-wider text-navy mb-2">
                     Response Time
@@ -109,14 +95,6 @@ export default function ContactPage() {
                   </h3>
                   <p className="text-gray-600 text-sm">
                     Remote / US-based
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-sm font-semibold uppercase tracking-wider text-navy mb-2">
-                    Spot Check
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    Report within a week of receiving your conversations.
                   </p>
                 </div>
               </div>

@@ -1,117 +1,146 @@
 import type { Metadata } from "next";
 import ClosingCTA from "../components/ClosingCTA";
-import CTAButton from "../components/CTAButton";
 import SectionHeading from "../components/SectionHeading";
-import {
-  AI_CARE_PRICE,
-  GUARANTEE_ON,
-  PRIMARY_CTA,
-  SECONDARY_CTA,
-  SPRINT_PRICE,
-} from "../offer";
+import ShiftRows from "../components/ShiftRows";
 
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "A free AI Spot Check, the four-week CX Optimization Sprint, and monthly AI Care. Prevent avoidable contacts, let AI answer up to 80% of the rest, and prove the answers are right. On the tools you already have.",
+    "Platform, process, AI and automation, proactive CX, personalization, and CX leadership for DTC, CPG, subscription, and B2B SaaS companies moving to the next era of customer experience.",
   openGraph: {
     title: "Services | NextEraCX",
     description:
-      "Prevent. Automate. Personalize. Three ways to work together, from a free look under the hood to ongoing care.",
+      "Customer experience is changing faster than it has in decades. NextEraCX helps companies get there: platform, process, automation, and people, working together.",
     url: "https://nexteracx.co/services",
   },
 };
 
-const spotCheckSteps = [
-  "You share 50 recent conversations (an export or read-only access)",
-  "I grade each AI answer (right, wrong, or guessing) and flag every contact that could have been prevented",
-  "You get a short report within a week: your real accuracy, your most preventable contact reasons, and the top three fixes",
+const services = [
+  {
+    id: "platform",
+    title: "Platform",
+    headline: "The right help desk, set up right.",
+    items: [
+      "Help desk selection, setup, and optimization",
+      "Platform migrations and integrations (Gorgias, Zendesk, Shopify, Recharge, Klaviyo, and more)",
+      "Routing, views, tags, and workflows that scale",
+    ],
+  },
+  {
+    id: "process",
+    title: "Process",
+    headline: "An operating system for your customer experience.",
+    items: [
+      "CX playbooks and SOPs",
+      "Macro libraries and knowledge bases",
+      "QA programs and escalation paths",
+    ],
+  },
+  {
+    id: "ai-automation",
+    title: "AI & Automation",
+    headline: "Up to 80% of tickets answered by AI.",
+    items: [
+      "AI agent setup and tuning",
+      "Testing against real, hard cases before customers see it",
+      "A smooth handoff from AI to people",
+    ],
+  },
+  {
+    id: "proactive-cx",
+    title: "Proactive CX",
+    headline: "The best ticket is the one that never gets sent.",
+    items: [
+      "Contact-driver analysis: what customers ask, and why",
+      "Proactive messages for delays, stockouts, renewals, and common questions",
+      "Root causes routed to product, marketing, and fulfillment",
+    ],
+  },
+  {
+    id: "personalization-retention",
+    title: "Personalization & Retention",
+    headline: "Every customer treated like one.",
+    items: [
+      "Subscription cancel, pause, and save flows",
+      "VIP routing and priority service for your best customers",
+      "Service and accommodations shaped by customer history and value",
+    ],
+  },
+  {
+    id: "leadership-insights",
+    title: "Leadership & Insights",
+    headline: "Senior CX leadership, when you need it.",
+    items: [
+      "Fractional head of CX",
+      "KPI dashboards, cost per ticket, and executive reporting",
+      "Voice of Customer programs that turn feedback into fixes",
+    ],
+  },
 ];
 
-const sprintIncludes = [
-  "Help desk review: rules, macros, routing, views, and tags",
-  "Contact-reason analysis: what customers ask, what can be prevented, and what can be automated",
-  "Proactive messages for your most preventable contacts (shipping delays, stockouts, subscription renewals), built in the email, SMS, and help desk tools you already use",
-  "Root-cause handoffs to product, marketing, and fulfillment, with owners",
-  "Personalized handling: routing and accommodations based on order history and customer value, and a priority lane for your best customers",
-  "Knowledge rewrite so your AI and your agents work from the same answers",
-  "AI agent configuration and tuning on your existing platform",
-  "Handoff design: when the AI steps aside, and what your agent sees when it does",
-  "A test suite of hard cases your AI must pass before launch",
-  "Subscription flows: AI makes the first save offer, a person handles the rest",
-  "Launch support and a results report: contacts per order, automation rate, and accuracy",
+const steps = [
+  {
+    title: "Discover",
+    description:
+      "We look at your platform, your data, and what customers are contacting you about.",
+  },
+  {
+    title: "Roadmap",
+    description:
+      "Where you are, where you could be, and the order to get there.",
+  },
+  {
+    title: "Build",
+    description: "Platform, process, and automation, set up and tested.",
+  },
+  {
+    title: "Run and improve",
+    description:
+      "Ongoing optimization and leadership, as much or as little as you need.",
+  },
 ];
 
-const aiCareIncludes = [
-  "Weekly review of AI conversations, with fixes before they become patterns",
-  "A monthly contact-driver review, with new proactive messages for anything trending up",
-  "Knowledge kept in sync when prices, shipping, products, or policies change",
-  "New automation as your contact reasons shift",
-  "Promotion and peak-season readiness",
-  "A monthly report: contacts prevented, what the AI resolved, what it got right, and what's next",
-];
-
-const notIncluded = [
-  "Supply agents or staffing",
-  "Sell software or take vendor commissions",
-  "Lock you into long contracts. AI Care is month to month.",
+const audience = [
+  "DTC and CPG brands",
+  "Subscription businesses",
+  "B2B SaaS companies",
+  "In-house teams, outsourced teams, or both",
 ];
 
 const faqs = [
   {
-    q: "What does “proactive” look like in practice?",
-    a: "A customer whose order is delayed hears from you before they wonder where it is. A subscriber gets a heads-up before a renewal ships. A product question that keeps coming up gets answered on the product page and in the post-purchase email. Each one is a ticket that never arrives.",
-  },
-  {
-    q: "What does “personalized” mean here?",
-    a: "Your best customers shouldn't wait in the same line as everyone else. Routing, save offers, and make-goods are shaped by order history and customer value, so a loyal subscriber gets treated like one.",
-  },
-  {
-    q: "Do we need to switch help desks or AI tools?",
-    a: "No. Most brands already have what they need. The tools have nearly the same features. The difference is how they're set up.",
+    q: "Do we need to switch platforms?",
+    a: "Sometimes. Often the best move is optimizing what you have. Sometimes a migration is the better path. We'll tell you which, and handle it either way.",
   },
   {
     q: "Is “up to 80%” realistic?",
-    a: "It depends on your ticket mix. Order status, shipping, returns, and subscription changes are highly automatable. Product issues and upset customers need people. The Spot Check tells you your real ceiling before you spend anything.",
+    a: "It depends on your ticket mix. Order status, shipping, returns, account, and subscription questions are highly automatable. Complex issues and upset customers need people.",
   },
   {
-    q: "What if we don't want AI yet?",
-    a: "Then the Sprint focuses on cleaning up your help desk and knowledge so your team is faster, and you're ready whenever you choose.",
+    q: "What if we're not ready for AI?",
+    a: "Then we start with platform and process, so your team is faster now and ready whenever you choose.",
   },
   {
     q: "Will AI replace our team?",
     a: "No. It takes the repetition so your people can focus on retention, proactive outreach, and the conversations that need judgment.",
   },
   {
+    q: "What does “proactive” look like in practice?",
+    a: "A customer whose order is delayed hears from you before they wonder where it is. A subscriber gets a heads-up before a renewal. A question that keeps coming up gets answered before it's asked.",
+  },
+  {
+    q: "Do you work with SaaS companies?",
+    a: "Yes. The same principles apply: onboarding, account and billing questions, and getting ahead of issues before customers notice them.",
+  },
+  {
+    q: "Can you work with our in-house team and outsourcing partners?",
+    a: "Yes. Everyone who answers your customers works from the same playbook, knowledge, and handoff rules.",
+  },
+  {
     q: "What platforms do you work with?",
-    a: "Gorgias and Zendesk most deeply, alongside Shopify, Recharge, Klaviyo, and marketplace channels. Others we can discuss on a call.",
-  },
-  {
-    q: "Can you work with our outsourcing partner?",
-    a: "Yes. Whoever answers your tickets, in-house or outsourced, works from the same improved knowledge and handoff rules.",
-  },
-  {
-    q: "Do you provide support agents?",
-    a: "No. NextEraCX is independent: no staffing, no software resale.",
-  },
-  {
-    q: "What does the Spot Check need from us?",
-    a: "50 recent AI-handled conversations, as an export or read-only access. Nothing else.",
+    a: "Gorgias and Zendesk most deeply, along with Shopify, Recharge, Klaviyo, and marketplace channels. Others we can discuss.",
   },
 ];
-
-function CheckList({ items }: { items: string[] }) {
-  return (
-    <ul className="space-y-3">
-      {items.map((item) => (
-        <li key={item} className="flex items-start gap-3 text-sm text-gray-600">
-          <span className="text-teal mt-0.5 flex-shrink-0">✓</span>
-          {item}
-        </li>
-      ))}
-    </ul>
-  );
-}
 
 export default function ServicesPage() {
   return (
@@ -121,127 +150,126 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-28">
           <div className="max-w-3xl">
             <p className="text-teal text-sm font-semibold uppercase tracking-wider mb-4">
-              Services
+              Where CX is going
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6">
-              Prevent. Automate. Personalize.
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+              Customer experience is changing faster than it has in decades.
             </h1>
-            <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
-              Three ways to work together, from a free look under the hood to
-              ongoing care. All on the tools you already have.
+          </div>
+        </div>
+      </section>
+
+      {/* The vision */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-3xl px-6 lg:px-8 py-20 md:py-24">
+          <div className="space-y-5 text-gray-600 text-lg leading-relaxed">
+            <p>
+              Support is moving from reactive to proactive. Instead of waiting
+              for customers to write in, the best companies reach them first: a
+              delay explained before anyone asks, a renewal confirmed before it
+              ships, a fix on the way before the complaint.
+            </p>
+            <p>
+              AI now answers routine questions instantly, in any channel, at
+              any hour. And every customer can be treated as an individual,
+              with service shaped by their history and what they mean to the
+              business.
+            </p>
+            <p>
+              People don&apos;t disappear in that future. Their role grows:
+              designing how the AI behaves, handling the moments that need
+              judgment and empathy, and building relationships with the
+              customers who matter most.
+            </p>
+            <p className="font-semibold text-navy">
+              That future isn&apos;t years away. Most of it can be built now,
+              on platforms that exist today. NextEraCX is here to get you
+              there.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Services Detail */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8 py-20 md:py-24">
-          <div className="space-y-20">
-            {/* Free AI Spot Check */}
-            <div id="spot-check-offer" className="scroll-mt-24">
-              <h2 className="text-2xl md:text-3xl font-bold text-navy mb-4">
-                Free AI Spot Check
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-8">
-                A no-cost look at how your AI is actually performing, and how
-                many of your contacts never needed to happen.
-              </p>
-              <div className="bg-gray-50 rounded-xl p-6">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-navy mb-4">
-                  How it works
-                </h3>
-                <CheckList items={spotCheckSteps} />
-              </div>
-              <p className="mt-6 text-gray-600 leading-relaxed">
-                <span className="font-semibold text-navy">Who it&apos;s for:</span>{" "}
-                Any brand already running an AI agent on Gorgias, Zendesk, or a
-                similar help desk.
-              </p>
-              <div className="mt-6">
-                <CTAButton href={SECONDARY_CTA.href}>{SECONDARY_CTA.label}</CTAButton>
-              </div>
-            </div>
+      {/* The shift */}
+      <section className="bg-gray-50">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
+          <SectionHeading label="The shift" title="The future of CX is already here." />
+          <ShiftRows />
+        </div>
+      </section>
 
-            {/* The CX Optimization Sprint */}
-            <div id="sprint" className="scroll-mt-24">
-              <h2 className="text-2xl md:text-3xl font-bold text-navy mb-4">
-                The CX Optimization Sprint
-              </h2>
-              <p className="text-lg font-semibold text-teal mb-3">
-                {SPRINT_PRICE} fixed. Four weeks.
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-8">
-                Fewer contacts in the first place, up to 80% of the rest
-                answered by AI, a clean handoff to your team, and proof the
-                answers are right.
-              </p>
-              <div className="bg-gray-50 rounded-xl p-6">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-navy mb-4">
-                  What&apos;s included
-                </h3>
-                <CheckList items={sprintIncludes} />
+      {/* How we get you there */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
+          <SectionHeading
+            label="How we get you there"
+            title="Platform, process, automation, and people, working together."
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {services.map((service) => (
+              <div
+                key={service.id}
+                id={service.id}
+                className="scroll-mt-24 rounded-xl border border-gray-200 p-6"
+              >
+                <h2 className="text-2xl font-bold text-navy mb-2">
+                  {service.title}
+                </h2>
+                <p className="font-semibold text-teal mb-4">{service.headline}</p>
+                <ul className="space-y-3">
+                  {service.items.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-3 text-sm text-gray-600"
+                    >
+                      <span className="text-teal mt-0.5 flex-shrink-0">✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div className="mt-6 rounded-xl bg-teal/10 border border-teal/20 p-6 text-center">
-                <p className="text-sm font-semibold text-navy">
-                  What you don&apos;t need: a new help desk, a new AI vendor, or
-                  more headcount.
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How we work */}
+      <section className="bg-gray-50">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
+          <SectionHeading title="How we work" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {steps.map((step, i) => (
+              <div key={step.title} className="p-6">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-teal/10 text-teal text-lg font-bold mb-4">
+                  {i + 1}
+                </div>
+                <h3 className="text-lg font-semibold text-navy mb-2">
+                  {step.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {step.description}
                 </p>
               </div>
-
-              {GUARANTEE_ON && (
-                <div className="mt-6 rounded-xl border-2 border-teal p-6">
-                  <h3 className="text-lg font-semibold text-navy mb-2">
-                    The Sprint guarantee
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    If your automation rate hasn&apos;t improved 30 days after
-                    launch, I keep working at no charge until it does.
-                  </p>
-                </div>
-              )}
-
-              <div className="mt-6">
-                <CTAButton href={PRIMARY_CTA.href}>{PRIMARY_CTA.label}</CTAButton>
-              </div>
-            </div>
-
-            {/* AI Care */}
-            <div id="ai-care" className="scroll-mt-24">
-              <h2 className="text-2xl md:text-3xl font-bold text-navy mb-4">
-                AI Care
-              </h2>
-              <p className="text-lg font-semibold text-teal mb-8">
-                {AI_CARE_PRICE}
-              </p>
-              <div className="bg-gray-50 rounded-xl p-6">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-navy mb-4">
-                  What&apos;s included
-                </h3>
-                <CheckList items={aiCareIncludes} />
-              </div>
-              <div className="mt-6">
-                <CTAButton href={PRIMARY_CTA.href}>{PRIMARY_CTA.label}</CTAButton>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* What's not included */}
-      <section className="bg-white border-t border-gray-200">
+      {/* Who we work with */}
+      <section className="bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 py-20 md:py-24">
-          <SectionHeading label="Independent" title="What NextEraCX doesn't do" />
-          <div className="bg-gray-50 rounded-xl p-6 max-w-2xl mx-auto">
-            <ul className="space-y-3">
-              {notIncluded.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-gray-600">
-                  <span className="text-gray-400 mt-0.5 flex-shrink-0">✕</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <SectionHeading title="Who we work with" />
+          <ul className="space-y-4 max-w-2xl mx-auto">
+            {audience.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-3 text-gray-600 text-lg leading-relaxed"
+              >
+                <span className="text-teal mt-0.5 flex-shrink-0">✓</span>
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
