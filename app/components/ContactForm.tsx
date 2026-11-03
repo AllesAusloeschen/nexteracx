@@ -35,7 +35,7 @@ export default function ContactForm() {
     return (
       <div className="rounded-lg border border-teal/30 bg-teal/5 p-8 text-center">
         <p className="text-lg font-semibold text-navy mb-2">Message sent.</p>
-        <p className="text-gray-600">Thank you for reaching out. I will be in touch shortly.</p>
+        <p className="text-gray-600">Thank you for reaching out. We will be in touch shortly.</p>
       </div>
     );
   }
@@ -93,7 +93,7 @@ export default function ContactForm() {
           required
           rows={5}
           className="w-full rounded-md border border-gray-200 px-4 py-2.5 text-sm text-charcoal placeholder:text-gray-400 focus:border-teal focus:ring-1 focus:ring-teal outline-none transition-colors resize-y"
-          placeholder="Tell me about your CX challenges..."
+          placeholder="Tell us about your CX challenges..."
         />
       </div>
 

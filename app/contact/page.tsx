@@ -74,7 +74,7 @@ export default function ContactPage() {
                 Send a Message
               </h2>
               <p className="text-gray-600 mb-6">
-                Prefer to write? Send me the details and I will get back to you
+                Prefer to write? Send us the details and we will get back to you
                 within one business day.
               </p>
               <ContactForm />

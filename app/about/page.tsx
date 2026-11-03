@@ -1,37 +1,24 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import ClosingCTA from "../components/ClosingCTA";
 import SectionHeading from "../components/SectionHeading";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Mathias Dorr, Principal at NextEraCX. 10+ years running support operations for DTC, CPG, subscription, and B2B SaaS companies. Helping companies move to proactive, automated, and personal customer experience.",
+    "NextEraCX helps DTC, CPG, subscription, and B2B SaaS companies move to proactive, automated, and personal customer experience.",
   openGraph: {
     title: "About | NextEraCX",
     description:
-      "I built CX the old way. Now I make AI earn its place.",
+      "We built CX the old way. Now we make AI earn its place.",
     url: "https://nexteracx.co/about",
   },
 };
 
-const principal = {
-  name: "Mathias Dorr",
-  title: "Principal",
-  photo: "/mathias-headshot.png",
-  bio: [
-    <>I&apos;ve spent more than 10 years running support operations for DTC, CPG, and subscription brands and B2B SaaS companies: help desks, knowledge bases, QA programs, outsourced teams, subscription flows, and the reporting leadership relies on. I&apos;ve built CX functions from the ground up. I know what breaks at scale and what holds.</>,
-    <>Today I build with AI hands-on, and I hold it to a simple rule: nothing reaches a customer until it passes a test of the hard cases. That rule came from watching AI dashboards celebrate numbers that hid wrong answers.</>,
-    <>NextEraCX is the practice built on that idea: helping companies move to the next era of customer experience, proactive, automated, and personal, without losing the human side that keeps customers loyal.</>,
-  ],
-  credentials: [
-    "MBA, Healthcare Administration, Gonzaga University",
-    "B.A., Business Management, magna cum laude, Lewis-Clark State College",
-    "Gorgias Certified Admin",
-    "Zendesk Customer Service Professional",
-    "Google Analytics Certification",
-  ],
-};
+const story = [
+  <>We&apos;re passionate about helping companies succeed with their customers. We&apos;ve spent years inside support operations for DTC, CPG, and subscription brands and B2B SaaS companies: help desks, knowledge bases, QA programs, outsourced teams, subscription flows, and the reporting leadership relies on. We know what breaks at scale and what holds.</>,
+  <>Today we build with AI hands-on, and we hold it to a simple rule: nothing reaches a customer until it passes a test of the hard cases.</>,
+  <>NextEraCX exists to help companies move to the next era of customer experience, proactive, automated, and personal, without losing the human side that keeps customers loyal.</>,
+];
 
 export default function AboutPage() {
   return (
@@ -44,65 +31,18 @@ export default function AboutPage() {
               About
             </p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
-              I built CX the old way. Now I make AI earn its place.
+              We built CX the old way. Now we make AI earn its place.
             </h1>
           </div>
         </div>
       </section>
 
-      {/* Principal */}
+      {/* Who we are */}
       <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
-            <div className="lg:col-span-2 flex justify-center">
-              <div className="w-full max-w-xs aspect-[3/4] rounded-lg overflow-hidden bg-gray-100 border border-gray-200">
-                <Image
-                  src={principal.photo}
-                  alt={principal.name}
-                  width={320}
-                  height={427}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="lg:col-span-3 space-y-5 text-gray-600 leading-relaxed">
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-navy mb-1">
-                  {principal.name}
-                </h2>
-                <p className="text-teal font-medium">{principal.title}</p>
-              </div>
-              {principal.bio.map((paragraph, j) => (
-                <p key={j}>{paragraph}</p>
-              ))}
-              <div className="pt-2">
-                <h3 className="text-base font-semibold text-navy mb-2">
-                  Credentials
-                </h3>
-                <ul className="space-y-2">
-                  {principal.credentials.map((item) => (
-                    <li key={item} className="flex items-start gap-3">
-                      <span className="text-teal mt-0.5 flex-shrink-0">✓</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="pt-2">
-                <h3 className="text-base font-semibold text-navy mb-2">
-                  Off the clock
-                </h3>
-                <p>
-                  Recharging looks like: travel (mostly Europe and the
-                  Caribbean, and also Costa Rica has my heart), chess,
-                  pickleball and tennis, lifting heavy things on a schedule,
-                  and an ongoing search for the perfect potato (French
-                  Bulldog).
-                </p>
-              </div>
-            </div>
-          </div>
+        <div className="mx-auto max-w-3xl px-6 lg:px-8 py-20 md:py-24 space-y-5 text-gray-600 text-lg leading-relaxed">
+          {story.map((paragraph, j) => (
+            <p key={j}>{paragraph}</p>
+          ))}
         </div>
       </section>
 
@@ -111,7 +51,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
           <SectionHeading
             label="Approach"
-            title="How I work."
+            title="How we work."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center p-6">

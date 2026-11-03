@@ -3,7 +3,6 @@ import ClosingCTA from "./components/ClosingCTA";
 import CTAButton from "./components/CTAButton";
 import SectionHeading from "./components/SectionHeading";
 import ShiftRows from "./components/ShiftRows";
-import StatCard from "./components/StatCard";
 import { CTA } from "./cta";
 
 const services = [
@@ -41,13 +40,6 @@ const services = [
     description:
       "Fractional head of CX, KPI dashboards, and Voice of Customer reporting.",
   },
-];
-
-const stats = [
-  { value: "40%", label: "Tickets automated" },
-  { value: "75% to 99th percentile", label: "CSAT in six months" },
-  { value: "40+ hrs to under 10", label: "Resolution time" },
-  { value: "10+ years", label: "DTC, CPG, subscription, and B2B SaaS" },
 ];
 
 export default function HomePage() {
@@ -131,23 +123,9 @@ export default function HomePage() {
           <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
             When AI handles the routine questions, your agents don&apos;t
             disappear. They move to the work that keeps customers: reaching out
-            before problems land, save conversations with your best
+            before problems land, retention calls with your best
             subscribers, personal check-ins with your top customers, reviews,
             and the problems that need judgment.
-          </p>
-        </div>
-      </section>
-
-      {/* Proof strip */}
-      <section className="border-b border-gray-200">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8 py-16">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat) => (
-              <StatCard key={stat.label} value={stat.value} label={stat.label} />
-            ))}
-          </div>
-          <p className="mt-6 text-center text-xs text-gray-600">
-            Results from CX operations I&apos;ve led.
           </p>
         </div>
       </section>
