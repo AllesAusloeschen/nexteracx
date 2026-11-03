@@ -20,7 +20,7 @@ const services = [
     id: "ai-automation",
     title: "AI & Automation",
     description:
-      "Up to 80% of tickets answered by AI, with a smooth handoff to people.",
+      "AI that answers routine tickets, with a smooth handoff to people.",
   },
   {
     id: "proactive-cx",
@@ -39,6 +39,23 @@ const services = [
     title: "Leadership & Insights",
     description:
       "Fractional head of CX, KPI dashboards, and Voice of Customer reporting.",
+  },
+];
+
+const reasons = [
+  {
+    title: "Senior and hands-on",
+    description: "The person you talk to is the person doing the work.",
+  },
+  {
+    title: "Built from the ground up",
+    description:
+      "More than 10 years building CX operations for DTC, CPG, subscription, and B2B SaaS companies. We know what breaks at scale and what holds.",
+  },
+  {
+    title: "Future-focused",
+    description:
+      "We build with AI every day, and we test it before your customers ever see it.",
   },
 ];
 
@@ -113,8 +130,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* What your team gets back */}
+      {/* Why NextEraCX */}
       <section className="bg-gray-50">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20 md:py-24">
+          <SectionHeading title="Why NextEraCX" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {reasons.map((reason) => (
+              <div
+                key={reason.title}
+                className="rounded-xl border border-gray-200 bg-white p-6"
+              >
+                <h3 className="text-lg font-semibold text-navy mb-2">
+                  {reason.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {reason.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What your team gets back */}
+      <section className="bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 py-20 md:py-24 text-center">
           <SectionHeading
             label="What your team gets back"

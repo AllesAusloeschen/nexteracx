@@ -22,7 +22,7 @@ const services = [
     headline: "The right help desk, set up right.",
     items: [
       "Help desk selection, setup, and optimization",
-      "Platform migrations and integrations (Gorgias, Zendesk, Shopify, Recharge, Klaviyo, and more)",
+      "Migrations and integrations across help desk, ecommerce, subscription, and marketing tools",
       "Routing, views, tags, and workflows that scale",
     ],
   },
@@ -138,7 +138,7 @@ const faqs = [
   },
   {
     q: "What platforms do you work with?",
-    a: "Gorgias and Zendesk most deeply, along with Shopify, Recharge, Klaviyo, and marketplace channels. Others we can discuss.",
+    a: "We're platform-agnostic. Help desks, ecommerce, subscription, and marketing tools: the right stack depends on your business, and we'll recommend what fits.",
   },
 ];
 

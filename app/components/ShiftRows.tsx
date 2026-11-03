@@ -2,7 +2,7 @@ const shifts = [
   { from: "Waiting for tickets", to: "Reaching customers first" },
   {
     from: "Answering everything by hand",
-    to: "AI handling up to 80%, with people on what matters",
+    to: "AI handling the routine, with people on what matters",
   },
   { from: "One-size-fits-all", to: "Service shaped by each customer" },
   { from: "A cost center", to: "A source of retention and insight" },
